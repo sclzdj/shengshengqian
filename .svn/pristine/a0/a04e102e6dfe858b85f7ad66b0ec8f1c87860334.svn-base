@@ -1,0 +1,313 @@
+<!doctype html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>联盟商品搜索</title>
+<link rel="stylesheet" type="text/css" href="http://365tp.hr999999.com/View/admin/css/alapi/index.css">
+<script language="javascript" src="http://365tp.hr999999.com/View/admin/js/comm/jquery.min.js"></script>
+<script type="text/javascript" src="http://365tp.hr999999.com/View/admin/js/comm/comm.js"></script>
+<script type="text/javascript" src="http://365tp.hr999999.com/View/admin/js/comm/jquery.nicescroll.js"></script>
+<script src="http://365tp.hr999999.com/View/admin/js/comm/getcate.js"></script>
+<script src="http://365tp.hr999999.com/View/admin/js/comm/Cookie.js"></script>
+<script>
+$(document).ready(function(e) {
+	$("a").each(function(index, element) {
+        if($(this).attr("value")==null)return;
+		if($(this).attr("value")==$(this).attr("val"))$(this).addClass("a1on");
+    });
+	$("select").each(function(index, element) {
+        if($(this).attr("val")){
+			$(this).find("option[value='"+$(this).attr("val")+"']").attr("selected",true);	
+		}
+    });
+	$(".z.-main .m-p1 .a1").click(function(){
+		$("#b2c").val($(this).attr('value'));goto();
+		return false;	
+	});
+	$("*").each(function(index, element) {
+        if($(this).attr('url')==null)return;
+		$(this).click(function(){window.location=$(this).attr("url");return false;});
+    });
+	if($(".z.-main .con > .l1").length>0)$("#m-p1-3").show();
+	$("#formMain").submit(function(){
+		goto();return false;	
+	});
+	$(".z.-main .con > .l1 .d1 > .xq").click(function(){
+		var tmp=Cookies.get("alids");
+		if(tmp==null)tmp='';
+		if(tmp.indexOf("_"+$(this).attr("fnuo_id"))>=0){
+			tmp=tmp.replace("_"+$(this).attr("fnuo_id"),'');
+			$(this).html("选取").removeClass("on");
+		}
+		else{
+			tmp+="_"+$(this).attr("fnuo_id");
+			$(this).html("已选取").addClass("on");
+		}
+		Cookies.set("alids",tmp);
+		return false;	
+	});
+	var tmpcookie=Cookies.get("alids");
+	if(tmpcookie==null)tmpcookie='';
+	$(".z.-main .con > .l1 .d1 > .xq").each(function(index, element) {
+        if(tmpcookie.indexOf("_"+$(this).attr("fnuo_id"))>=0)$(this).addClass("on").html("已选取");
+    });
+	$("#save").click(function(){
+		var json={};
+		json.data=getset();
+		json.savename=$("#savename").val();
+		if($("#cate_id").val()==0){
+			alert("请选择分类");	
+			return false;
+		}
+		if(json.savename==''){
+			alert("请填写规则名字");
+			return false;
+		}
+		$.post("http://365tp.hr999999.com/admin/?mod=&act=alapi&ctrl=saverule",json,function(data){
+			alert(data.msg);
+			if(data.success==1)window.location="http://365tp.hr999999.com/admin/?mod=&act=alapi&ctrl=rule";	
+		},"json");
+	});
+	$("#cj").click(function(){
+		window.location="http://365tp.hr999999.com/admin/?mod=&act=alapi&ctrl=doing&cate_id="+$("#cate_id").val();	
+	});
+	$("#cj2").click(function(){
+		window.location="http://365tp.hr999999.com/admin/?mod=&act=alapi&ctrl=doing&cate_id="+$("#cate_id").val()+"&type=1";	
+	});
+	if(""==1){
+		window.location="http://365tp.hr999999.com/admin/?mod=&act=alapi&ctrl=doing&cate_id=5363";
+		return;
+	}
+	$("body").attr("style","display:block;");
+});
+function getset(){
+	var url="";
+	$(".inpget").each(function(index, element) {
+		if($(this).val()==''||$(this).val()==null)return;
+		url+="&"+$(this).attr("name")+"="+$(this).val();
+	});
+	return url;
+}	
+function goto(){
+	var url=window.location.href;
+	url=url.split("?");url=url[0]+"?act=alapi&ctrl=al"+getset();
+	window.location=url;
+}
+</script>
+</head>
+<body style="display:none;">
+<form class="z -main" method="get" action="oh my god" id="formMain">
+  <div class="sea">
+    <div class="h">
+      <input type="text" class="t1 inpget" placeholder="搜你想要的~" value="2017女鞋" name="q">
+      <input type="submit" value="搜索" class="sub1">
+    </div>
+  </div>
+  <div class="m-p1">
+    <h1>范围</h1>
+    <a href="javascript:void(0)" value="" val="" class="a1 tt">所有宝贝</a>
+    <a href="javascript:void(0)" value="0" val="" class="a1 tt">淘宝</a>
+    <a href="javascript:void(0)" value="1" val="" class="a1 tt">天猫</a>
+    <input type="hidden" id="b2c" class="inpget" name="b2c" value="">
+    </div>
+  <div class="m-p1">
+    <h1>查询</h1>
+    <span>收入比率</span>
+    <input type="text" class="t2 inpget" name="startTkRate"  value="10"><span>-</span>
+    <input type="text" class="t2 inpget" name="endTkRate"  value="90">
+    <span>%</span>
+    
+    <span style="margin-left:10px;">价格</span>
+    <input type="text" class="t2 inpget" name="start_price" value="">
+    <span>-</span>
+    <input type="text" class="t2 inpget" name="end_price" value="" style="width:55px;">
+    
+    <span style="margin-left:10px;">聚划算</span>
+    <select class="inpget" name="jhs" val="">
+      <option value="">默认</option>
+      <option value="1">是</option>
+    </select>
+    
+    <span style="margin-left:10px;">有优惠券</span>
+    <select class="inpget" name="dpyhq" val="">
+      <option value="">默认</option>
+      <option value="1">是</option>
+    </select>
+    
+    <span style="margin-left:10px;">定向计划</span>
+    <select class="inpget" name="dxjh" val="">
+      <option value="">默认</option>
+      <option value="1">是</option>
+    </select>
+    
+    
+    
+    <span style="margin-left:10px;">牛皮癣程度</span>
+    <select class="inpget" name="npxType" val="">
+      <option value="">默认</option>
+      <option value="1">无</option>
+      <option value="2">轻微</option>
+    </select>
+    <span style="margin-left:10px;">图片质量</span>
+    <select class="inpget" name="picQuality" val="">
+      <option value="">默认</option>
+      <option value="1">中</option>
+      <option value="2">高</option>
+    </select>
+  </div>
+  <div class="m-p1">
+    <h1 style="padding-right:22px;">&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+   
+    
+    <span style="margin-left:10px;">类型</span>
+    <select class="inpget" name="typeTag" val="">
+      <option value="">所有</option>
+      <option value="qqg">全球购</option>
+      <option value="zgzz">中国制造</option>
+    </select>
+    
+    <span style="margin-left:10px;">金牌店铺</span>
+    <select class="inpget" name="jpmj" val="">
+      <option value="">默认</option>
+      <option value="1">是</option>
+    </select>
+    
+    <span style="margin-left:10px;">消费者保障</span>
+    <select class="inpget" name="xfzbz" val="">
+      <option value="">默认</option>
+      <option value="1">是</option>
+    </select>
+    
+    <span style="margin-left:10px;">好评率高于平均行业</span>
+    <select class="inpget" name="hGoodRate" val="">
+      <option value="">默认</option>
+      <option value="1">是</option>
+    </select> 
+    
+    
+   <span style="margin-left:10px;">采集数量</span>
+    <select name="perPageSize" val="1000" class="inpget">
+      <option value="100" >100</option>
+      <option value="200" >200</option>
+      <option value="300" >300</option>
+      <option value="400" >400</option>
+      <option value="500" >500</option>
+      <option value="600" >600</option>
+      <option value="700" >700</option>
+      <option value="800" >800</option>
+      <option value="900" >900</option>
+      <option value="1000" >1000</option>
+    </select>
+    
+    <span style="margin-left:10px;">排序</span>
+    <select class="inpget" name="sortType" val="">
+      <option value="">默认</option>
+      <option value="9">销量从高到低</option>
+      <option value="3">价格从高到低</option>
+      <option value="4">价格从低到高</option>
+      <option value="1">收入比率从高到低</option>
+      <option value="5">月推广量从高到低</option>
+      <option value="7">月子出佣金从高到低</option>
+      
+    </select>
+    <input type="submit" value="确定" class="sub1">
+   </div>
+  
+  <div class="m-p1" style="padding-bottom:5px; display:none;" id="m-p1-3">
+    <h1>采集</h1>
+    <select name="cate_id1" getc="on" val="5363" style="margin-left:0px;"></select>
+	<input type="hidden" id="cate_id" name="cate_id" value="5363" class="inpget">
+    
+    <input type="text" id="savename" value="" placeholder="规则的名字" style="
+    width: 120px;
+    margin-left: 5px;
+    padding: 0px 5px;
+    margin-top: 2px;
+">
+
+    <input type="button" value="保存当前采集规则" class="sub1" id="save">
+    <input type="button" value="查看规则列表" class="sub1" url="http://365tp.hr999999.com/admin/?mod=&act=alapi&ctrl=rule">
+    <input type="button" value="采集选中的商品" class="sub1" id="cj2">
+    <input type="button" value="一键采集商品" class="sub1" id="cj">
+    
+    <!--<input type="button" value="只采集包邮的商品" class="sub1" id="cj2">-->
+    
+  </div>
+  <div class="con">
+    <div class="l1" style="background-color:#eee;"> <span class="sp1">商品信息</span>
+    <!--<span class="sp2">邮费</span>-->
+    <span class="sp2">商城</span> <span class="sp2">原价</span> <span class="sp2">现价</span> <span class="sp2">返利比例</span> </div>
+    
+    
+      <div class="l1 sp">
+        <div class="tdj" style="display:none;"></div>
+        <div class="d1">
+        <em class="xq" fnuo_id="549798887878">选取</em>
+        <img class="goodslist"  src="https://img.alicdn.com/bao/uploaded/i1/TB1pszsQVXXXXXsXpXXXXXXXXXX_!!0-item_pic.jpg_150x150.jpg" title="2017春夏季新款韩版运动鞋女鞋原宿百搭小白鞋增高透气休闲跑步鞋"> <a href="http://item.taobao.com/item.htm?id=549798887878" target="_blank" class="a1" title="2017春夏季新款韩版运动鞋女鞋原宿百搭小白鞋增高透气休闲跑步鞋">2017春夏季新款韩版运动鞋女鞋原宿百搭小白鞋增高透气休闲跑步鞋</a> <a href="http://store.taobao.com/shop/view_shop.htm?user_number_id=1748565293" target="_blank" class="a2" title="">顽美猫旗舰店</a> </div>
+        
+        <!--<div class="d2" t="0"></div>邮费-->
+        <div class="d2" t="2">天猫</div><!--商城-->
+        <div class="d2">159￥</div> <!--原价-->
+        <div class="d2" t="1">45</div><!--现价-->
+        <div class="d2" t="3">10.5%</div><!--折扣--> 
+        
+      </div>
+    
+ 
+    
+  
+    
+    
+  </div>
+</form>
+
+
+<!--z-main-->
+
+<form method="post" class="z -fenye" action="http://365tp.hr999999.com/admin/?mod=&act=atbapi&ctrl=atb" id="cjcon">
+<div class="h">
+
+
+<a href="http://365tp.hr999999.com/admin/?mod=&act=alapi&ctrl=al&q=2017%E5%A5%B3%E9%9E%8B&startTkRate=10&endTkRate=90&perPageSize=1000&cate_id=5363&p=1" class="a1">1</a>
+
+<a href="http://365tp.hr999999.com/admin/?mod=&act=alapi&ctrl=al&q=2017%E5%A5%B3%E9%9E%8B&startTkRate=10&endTkRate=90&perPageSize=1000&cate_id=5363&p=2" class="a1">2</a>
+
+<a href="http://365tp.hr999999.com/admin/?mod=&act=alapi&ctrl=al&q=2017%E5%A5%B3%E9%9E%8B&startTkRate=10&endTkRate=90&perPageSize=1000&cate_id=5363&p=3" class="a1">3</a>
+
+<a href="http://365tp.hr999999.com/admin/?mod=&act=alapi&ctrl=al&q=2017%E5%A5%B3%E9%9E%8B&startTkRate=10&endTkRate=90&perPageSize=1000&cate_id=5363&p=4" class="a1">4</a>
+
+<a href="http://365tp.hr999999.com/admin/?mod=&act=alapi&ctrl=al&q=2017%E5%A5%B3%E9%9E%8B&startTkRate=10&endTkRate=90&perPageSize=1000&cate_id=5363&p=5" class="a1">5</a>
+
+<a href="http://365tp.hr999999.com/admin/?mod=&act=alapi&ctrl=al&q=2017%E5%A5%B3%E9%9E%8B&startTkRate=10&endTkRate=90&perPageSize=1000&cate_id=5363&p=6" class="a1">6</a>
+
+<a href="http://365tp.hr999999.com/admin/?mod=&act=alapi&ctrl=al&q=2017%E5%A5%B3%E9%9E%8B&startTkRate=10&endTkRate=90&perPageSize=1000&cate_id=5363&p=7" class="a1">7</a>
+
+<a href="http://365tp.hr999999.com/admin/?mod=&act=alapi&ctrl=al&q=2017%E5%A5%B3%E9%9E%8B&startTkRate=10&endTkRate=90&perPageSize=1000&cate_id=5363&p=8" class="a1">8</a>
+
+<a href="http://365tp.hr999999.com/admin/?mod=&act=alapi&ctrl=al&q=2017%E5%A5%B3%E9%9E%8B&startTkRate=10&endTkRate=90&perPageSize=1000&cate_id=5363&p=9" class="a1">9</a>
+
+<a href="http://365tp.hr999999.com/admin/?mod=&act=alapi&ctrl=al&q=2017%E5%A5%B3%E9%9E%8B&startTkRate=10&endTkRate=90&perPageSize=1000&cate_id=5363&p=10" class="a1">10</a>
+
+
+</div>
+</form>
+<script>
+
+$(document).ready(function(e) {
+	return false;
+    document.onkeydown=function(e){
+			e=e?e:window.event;
+			switch(e.keyCode){
+				case 116:
+				$("#f1").submit();
+				return false;
+				break;	
+			}
+	}
+});
+
+</script>
+
+</body>
+</html>

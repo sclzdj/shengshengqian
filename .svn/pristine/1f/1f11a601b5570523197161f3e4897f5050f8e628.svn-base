@@ -1,0 +1,16 @@
+$("#form_group_view").css('display','none');
+$("#click_mode").change(function(){
+	var click_mode = $("#click_mode").val();
+	if(click_mode == 'nts_go_view'){
+		$("#form_group_view").css('display','block');
+		$("#form_group_href").css('display','none');
+	}
+	if(click_mode == 'url'){
+		$("#form_group_view").css('display','none');
+		$("#form_group_href").css('display','block');
+	}
+	if(click_mode == 'call'){
+		$("#form_group_view").css('display','none');
+		$("#form_group_href").css('display','none');
+	}
+});

@@ -1,0 +1,36 @@
+2017-05-09 10:13:51	exception 'think\exception\ErrorException' with message 'Undefined variable: r_price' in C:\WWW\taoke\lib\taobao\tbitemcollection.php:156
+Stack trace:
+#0 C:\WWW\taoke\lib\taobao\tbitemcollection.php(156): think\Error::appError(8, 'Undefined varia...', 'C:\\WWW\\taoke\\li...', 156, Array)
+#1 C:\WWW\taoke\application\index\controller\Test.php(186): tbitemcollection->step2('15930779831')
+#2 [internal function]: app\index\controller\Test->tb()
+#3 C:\WWW\taoke\thinkphp\library\think\App.php(234): ReflectionMethod->invokeArgs(Object(app\index\controller\Test), Array)
+#4 C:\WWW\taoke\thinkphp\library\think\App.php(407): think\App::invokeMethod(Array, Array)
+#5 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#6 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#7 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#8 {main}
+
+2017-05-09 10:13:53	exception 'think\exception\HttpException' with message 'module not exists:favicon.ico' in C:\WWW\taoke\thinkphp\library\think\App.php:358
+Stack trace:
+#0 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#1 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#2 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#3 {main}
+
+2017-05-09 10:14:38	exception 'think\exception\ErrorException' with message 'Undefined offset: 0' in C:\WWW\taoke\lib\taobao\tbitemcollection.php:150
+Stack trace:
+#0 C:\WWW\taoke\lib\taobao\tbitemcollection.php(150): think\Error::appError(8, 'Undefined offse...', 'C:\\WWW\\taoke\\li...', 150, Array)
+#1 C:\WWW\taoke\application\index\controller\Test.php(186): tbitemcollection->step2('15930779831')
+#2 [internal function]: app\index\controller\Test->tb()
+#3 C:\WWW\taoke\thinkphp\library\think\App.php(234): ReflectionMethod->invokeArgs(Object(app\index\controller\Test), Array)
+#4 C:\WWW\taoke\thinkphp\library\think\App.php(407): think\App::invokeMethod(Array, Array)
+#5 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#6 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#7 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#8 {main}
+
+2017-05-09 10:15:45	exception 'think\exception\ErrorException' with message 'Maximum execution time of 30 seconds exceeded' in C:\WWW\taoke\lib\taobao\tbitemcollection.php:182
+Stack trace:
+#0 [internal function]: think\Error::appShutdown()
+#1 {main}
+

@@ -1,0 +1,92 @@
+<?php
+namespace plugins\onecall;
+
+use app\common\controller\Plugin;
+
+/**
+ * 一键拨号
+ */
+class onecall extends Plugin
+{
+    /**
+     * @var array 插件信息
+     */
+    public $info = [
+        // 插件名[必填]
+        'name'        => 'OneCall',
+        // 插件标题[必填]
+        'title'       => '一键拨号',
+        // 插件唯一标识[必填],格式：插件名.开发者标识.plugin
+        'identifier'  => 'OneCall.jmw.plugin',
+        // 插件图标[选填]
+        'icon'        => 'fa fa-fw fa-globe',
+        // 插件描述[选填]
+        'description' => '这是一键拨号插件功能,需要客户端支持~',
+        // 插件作者[必填]
+        'author'      => 'jmw.devel',
+        // 作者主页[选填]
+        'author_url'  => 'http://www.ruimeng898.com',
+        // 插件版本[必填],格式采用三段式：主版本号.次版本号.修订版本号
+        'version'     => '1.0.0',
+        // 是否有后台管理功能
+        'admin'       => '1',
+    ];
+
+    /**
+     * 安装方法必须实现
+     */
+    public function install(){
+        return true;
+    }
+
+    /**
+     * 卸载方法必须实现
+     */
+    public function uninstall(){
+        return true;
+    }
+    /**
+     * @var array 新增或编辑的字段
+     */
+    public $fields = [
+        ['static', 'username', '用户号码'],
+        ['number', 'index_num', '快捷键', '请填写快捷键',1,1,9,1],
+        ['text','name','备注','请输入备注'],
+        ['text','callerd','电话号码','请输入电话号码'],
+        ['datetime', 'created', '创建时间'],
+        ['datetime', 'updated', '更新时间'],
+    ];
+    /**
+     * @var array 管理界面字段信息
+     */
+    public $admin = [
+        'title'        => '', // 后台管理标题
+        'table_name'   => 'onecall_userlog', // 数据库表名，如果没有用到数据库，则留空
+        'order'        => 'id', // 需要排序功能的字段，多个字段用逗号隔开
+        'filter'       => '', // 需要筛选功能的字段，多个字段用逗号隔开
+        'search_title' => '', // 搜索框提示文字,一般不用填写
+        'search_field' => [ // 需要搜索的字段，如果需要搜索，则必填，否则不填
+            'username' => '用户号码',
+        ],
+    
+        // 后台列表字段
+        'columns' => [
+            ['id', 'ID'],
+            ['username', '用户号码'],
+            ['index_num', '快捷键'],
+            ['name', '备注'],
+            ['callerd', '号码'],
+            ['created', '创建时间','datetime'],
+            ['updated', '更新时间','datetime'],
+            
+        ],
+    
+        // 右侧按钮
+        'right_buttons' => [
+            'edit',          // 使用系统自带的编辑按钮
+            'delete',        // 使用系统自带的删除按钮
+        ],
+        // 顶部栏按钮
+        'top_buttons' => []
+    ];
+}

@@ -1,0 +1,233 @@
+[ 2017-05-05T14:27:38+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：2.002531s][吞吐率：0.50req/s] [内存消耗：2,361.35kb] [文件加载：56]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.141963s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.081374s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.081185s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.004705s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.022869s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.003902s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.014849s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.012158s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.034048s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.004747s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.006487s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.014356s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.004758s ]
+
+---------------------------------------------------------------
+[ 2017-05-05T14:28:55+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：1.012217s][吞吐率：0.99req/s] [内存消耗：2,362.22kb] [文件加载：56]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.049396s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.037337s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014934s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.007629s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.005054s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.006643s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.003245s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.009745s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.004102s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.005560s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.003603s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.005883s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.003920s ]
+
+---------------------------------------------------------------
+[ 2017-05-05T14:29:07+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：2.927313s][吞吐率：0.34req/s] [内存消耗：2,244.06kb] [文件加载：63]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.104842s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.057506s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.069245s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.003938s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.006077s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.006451s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.007515s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.010823s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.019323s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.006517s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.005384s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.006555s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.003789s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_product_items` [ RunTime:0.005630s ]
+[ sql ] [ SQL ] DELETE FROM `tk_product_items`    WHERE  `sid` = 111714585 [ RunTime:0.004128s ]
+[ error ] [8]未定义数组索引: sale_num[C:\WWW\taoke\application\index\controller\Test.php:107]
+
+---------------------------------------------------------------
+[ 2017-05-05T14:30:13+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：3.128551s][吞吐率：0.32req/s] [内存消耗：2,313.33kb] [文件加载：58]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.114226s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.038134s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.069415s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.007182s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.012021s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.007963s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.004087s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.004083s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.003625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.005834s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.005029s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.003670s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.010465s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_product_items` [ RunTime:0.003865s ]
+[ sql ] [ SQL ] DELETE FROM `tk_product_items`    WHERE  `sid` = 111714585 [ RunTime:0.004273s ]
+[ sql ] [ SQL ] INSERT INTO tk_product_items(itemid,sid,title,comment_num,c_price,r_price,pic,update_time,sale_num) VALUES('524258911578',111714585,'春季女士纯棉睡衣女春秋常规长袖韩版可爱卡通大码全棉家居服套装',8025,34.80,148.00,'//img.alicdn.com/bao/uploaded/i4/TB17kkdQpXXXXXMXVXXXXXXXXXX_!!2-item_pic.png_240x240.jpg',1493965813,15291),('547512676271',111714585,'夏季睡衣女夏纯棉短袖可爱韩版卡通大码全棉夏天薄款家居服两件套',183,23.80,138.00,'//img.alicdn.com/bao/uploaded/i2/409204732/TB2yGaKfhRDOuFjSZFzXXcIipXa_!!409204732.jpg_240x240.jpg',1493965813,1348),('536077081919',111714585,'特价情侣睡衣女春秋可爱纯棉长袖卡通大码韩版全棉男士家居服套装',1440,39.00,148.00,'//img.alicdn.com/bao/uploaded/i1/409204732/TB2MAN6fd0opuFjSZFxXXaDNVXa_!!409204732.jpg_240x240.jpg',1493965813,1146),('545185438691',111714585,'睡衣男夏季纯棉短袖短裤休闲薄款青年夏天全棉韩版男士家居服套装',342,35.00,138.00,'//img.alicdn.com/bao/uploaded/i2/409204732/TB2jwH9fgJkpuFjSszcXXXfsFXa_!!409204732.jpg_240x240.jpg',1493965813,590),('544780716427',111714585,'夏季睡衣女夏纯棉短袖短裤可爱韩版卡通夏季学生全棉家居服女套装',796,24.90,138.00,'//img.alicdn.com/bao/uploaded/i2/409204732/TB2qCvjdCXlpuFjy0FeXXcJbFXa_!!409204732.jpg_240x240.jpg',1493965813,501),('528381350223',111714585,'夏天情侣睡衣女士纯棉短袖卡通可外穿2017夏季新款男士家居服套装',12,39.00,138.00,'//img.alicdn.com/bao/uploaded/i3/409204732/TB2EPuybrBmpuFjSZFuXXaG_XXa_!!409204732.jpg_240x240.jpg',1493965813,101),('547414614932',111714585,'睡衣男夏季纯棉短袖短裤休闲薄款青年学生全棉韩版男士家居服套装',2,35.00,138.00,'//img.alicdn.com/bao/uploaded/i2/409204732/TB2PORYjbXlpuFjSszfXXcSGXXa_!!409204732.jpg_240x240.jpg',1493965813,38),('541199899799',111714585,'秋冬季情侣法兰绒睡衣女可爱大码加厚加绒珊瑚绒套装冬款家居服男',1346,75.00,288.00,'//img.alicdn.com/bao/uploaded/i1/409204732/TB2pkN2fctnpuFjSZFKXXalFFXa_!!409204732.jpg_240x240.jpg',1493965813,27),('537877034182',111714585,'韩版睡衣女春秋季纯棉长袖常规可外穿家居服女式秋天运动套装薄款',1,49.00,138.00,'//img.alicdn.com/bao/uploaded/i2/409204732/TB2ucm5Xqi5V1BjSszdXXXUJXXa_!!409204732.jpg_240x240.jpg',1493965813,20),('537218058918',111714585,'2016秋季情侣睡衣女长袖长裤纯棉可爱卡通韩版男士大码全棉家居服',6,49.00,138.00,'//img.alicdn.com/bao/uploaded/i2/409204732/TB2h0kgXPzyQeBjy0FeXXbwyFXa_!!409204732.jpg_240x240.jpg',1493965813,33),('537238945027',111714585,'睡衣女春秋长袖纯棉韩版卡通宽松薄款学生家居服女士秋天全棉套装',3,58.00,138.00,'//img.alicdn.com/bao/uploaded/i2/409204732/TB24YHIXNvxQeBjy0FdXXaybXXa_!!409204732.jpg_240x240.jpg',1493965813,27),('536907962034',111714585,'春秋季情侣睡衣女士纯棉长袖韩版可爱卡通男士长裤大码家居服套装',4,49.00,148.00,'//img.alicdn.com/bao/uploaded/i3/409204732/TB2sdkRuXXXXXXmXpXXXXXXXXXX_!!409204732.jpg_240x240.jpg',1493965813,19),('527307882318',111714585,'睡衣女夏季纯棉可爱卡通短袖短裤夏天女韩版休闲加大码家居服套装',1,39.00,128.00,'//img.alicdn.com/bao/uploaded/i4/409204732/TB2DvuxXeLyQeBjy0FaXXXiDVXa_!!409204732.jpg_240x240.jpg',1493965813,20),('544937615041',111714585,'夏季情侣睡衣女夏天纯棉卡通短袖短裤男士韩版全棉大码家居服套装',10,39.00,138.00,'//img.alicdn.com/bao/uploaded/i1/409204732/TB26N1PdSFjpuFjSspbXXXagVXa_!!409204732.jpg_240x240.jpg',1493965813,36),('527667370169',111714585,'2016夏季短袖短裤情侣睡衣纯棉可爱卡通男女全棉家居服加大码套装',11,39.00,128.00,'//img.alicdn.com/bao/uploaded/i2/409204732/TB2ywo9dpXXXXbpXpXXXXXXXXXX_!!409204732.jpg_240x240.jpg',1493965813,25),('45514941740',111714585,'睡衣女夏款纯棉短袖睡衣韩版夏休闲可外穿薄款套装女装夏天家居服',1,39.00,128.00,'//img.alicdn.com/bao/uploaded/i4/409204732/TB2gzjkoXXXXXbLXXXXXXXXXXXX_!!409204732.jpg_240x240.jpg',1493965813,24),('544700519763',111714585,'夏季韩版情侣纯棉短袖睡衣女套装夏天可爱两件套大码薄款男家居服',6,39.00,138.00,'//img.alicdn.com/bao/uploaded/i3/409204732/TB2Ruj8i1J8puFjy1XbXXagqVXa_!!409204732.jpg_240x240.jpg',1493965813,24),('547808614549',111714585,'夏季短袖短裤情侣睡衣纯棉可爱卡通男女全棉半袖家居服加大码套装',0,39.00,138.00,'//img.alicdn.com/bao/uploaded/i2/409204732/TB2CwJzl5lnpuFjSZFgXXbi7FXa_!!409204732.jpg_240x240.jpg',1493965813,21),('547556404805',111714585,'2017夏季短袖短裤情侣睡衣纯棉可爱卡通男女全棉加大码家居服套装',1,39.00,138.00,'//img.alicdn.com/bao/uploaded/i4/409204732/TB2Xr.LjCxjpuFjSszeXXaeMVXa_!!409204732.jpg_240x240.jpg',1493965813,17),('547696819778',111714585,'夏季情侣睡衣男女短袖纯棉女式春款家居服睡衣套装包邮2017春夏款',4,39.00,138.00,'//img.alicdn.com/bao/uploaded/i4/409204732/TB2x1OMjHJkpuFjy1zcXXa5FFXa_!!409204732.jpg_240x240.jpg',1493965813,13),('528657288534',111714585,'春夏季特价女士纯棉睡衣韩版中裙休闲大码女装露肩性感家居服睡裙',2,38.00,89.00,'//img.alicdn.com/bao/uploaded/i3/409204732/TB2KeqTcVXXXXbsXpXXXXXXXXXX_!!409204732.jpg_240x240.jpg',1493965813,17),('537892940863',111714585,'天天特价春秋季情侣睡衣女可爱纯棉长袖秋冬韩厚男全棉家居服套装',213,49.00,148.00,'//img.alicdn.com/bao/uploaded/i2/409204732/TB2N2wCXai5V1BjSszgXXbHLpXa_!!409204732.jpg_240x240.jpg',1493965813,75),('545118643417',111714585,'夏季女士纯棉短袖睡衣夏天薄款韩版加大码可外穿卡通睡衣女夏套装',0,39.00,138.00,'//img.alicdn.com/bao/uploaded/i2/409204732/TB2uk7xdYXlpuFjy1zbXXb_qpXa_!!409204732.jpg_240x240.jpg',1493965813,8),('521323189844',111714585,'韩版秋季情侣睡衣女纯棉长袖休闲春秋睡衣男士卡通圆领家居服套装',1,59.00,158.00,'//img.alicdn.com/bao/uploaded/i4/TB1HMeaJXXXXXXjXXXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg',1493965813,4),('537285858338',111714585,'韩版情侣睡衣女卡通可爱休闲夏长袖纯棉春秋季新款男士家居服套装',4,49.00,138.00,'//img.alicdn.com/bao/uploaded/i2/409204732/TB24bmTX8YxQeBjSszeXXa0spXa_!!409204732.jpg_240x240.jpg',1493965813,8),('522826978374',111714585,'春秋季睡衣女纯棉质长袖圆领休闲外穿女式大码韩版卡通家居服套装',4,45.00,128.00,'//img.alicdn.com/bao/uploaded/i3/TB1NUU8KpXXXXbIXVXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg',1493965813,11),('521826368945',111714585,'春秋季睡衣男士纯棉长袖可爱卡通男青年秋季家居服大码可外穿套装',2,59.00,136.00,'//img.alicdn.com/bao/uploaded/i4/TB1ur10JpXXXXXwXFXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg',1493965813,8),('537586520415',111714585,'2016新款秋季情侣长袖睡衣女士纯棉秋天男士韩版可外穿家居服套装',6,49.00,138.00,'//img.alicdn.com/bao/uploaded/i3/409204732/TB2xhEWX4aK.eBjSZFBXXagMXXa_!!409204732.jpg_240x240.jpg',1493965813,5),('544888271035',111714585,'特价夏季情侣睡衣女夏纯棉短袖卡通大码全棉薄款夏季男家居服套装',6,39.00,138.00,'//img.alicdn.com/bao/uploaded/i4/409204732/TB2oxcOkrlmpuFjSZFlXXbdQXXa_!!409204732.jpg_240x240.jpg',1493965813,31),('521760826378',111714585,'春秋季情侣睡衣长袖纯棉男士大码套装女款家居服卡通夏季秋冬韩版',0,59.00,128.00,'//img.alicdn.com/bao/uploaded/i2/TB1085nIFXXXXcoXFXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg',1493965813,0),('548234023984',111714585,'2017睡裙女夏天纯棉短袖长款韩版可爱学生睡衣性感连衣裙家居服女',0,38.00,128.00,'//img.alicdn.com/bao/uploaded/i3/409204732/TB2bxj5jgRkpuFjy1zeXXc.6FXa_!!409204732.jpg_240x240.jpg',1493965813,2),('537859708113',111714585,'睡衣女士长袖纯棉薄款春秋天韩版休闲宽松夏季全棉家居服套装秋季',1,49.00,138.00,'//img.alicdn.com/bao/uploaded/i4/409204732/TB2i.zdXai5V1BjSspiXXXGBFXa_!!409204732.jpg_240x240.jpg',1493965813,2),('525930266046',111714585,'春秋季睡衣女士纯棉长袖长裤可爱卡通2016秋冬季加大码家居服套装',1,49.00,168.00,'//img.alicdn.com/bao/uploaded/i1/TB1xB0nLpXXXXbxXFXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg',1493965813,4),('537134788311',111714585,'2016秋季新款男女春秋时尚睡衣女士纯棉男士休闲韩版情侣睡衣套装',18,49.00,138.00,'//img.alicdn.com/bao/uploaded/i1/409204732/TB2YlJZXzzyQeBjy0FjXXc5CVXa_!!409204732.jpg_240x240.jpg',1493965813,8),('544989216176',111714585,'夏季睡衣男士纯棉短袖短裤可爱韩版卡通大码夏季全棉家居服男套装',2,39.00,139.00,'//img.alicdn.com/bao/uploaded/i4/409204732/TB24scsetBopuFjSZPcXXc9EpXa_!!409204732.jpg_240x240.jpg',1493965813,8),('538521623207',111714585,'秋款睡衣女士长袖纯棉春秋天韩版宽松夏秋冬全棉质家居服套装秋季',0,88.00,188.00,'//img.alicdn.com/bao/uploaded/i4/409204732/TB2B_xUXyYC11Bjy1zbXXbYLFXa_!!409204732.jpg_240x240.jpg',1493965813,3),('546782696648',111714585,'韩版睡裙女夏季纯棉短袖中长款可爱学生睡衣夏天宽松大码家居服女',2,38.00,128.00,'//img.alicdn.com/bao/uploaded/i2/409204732/TB2LvNWh3JlpuFjSspjXXcT.pXa_!!409204732.jpg_240x240.jpg',1493965813,7),('547534202009',111714585,'2017夏季纯棉短袖清新公主学生睡衣睡裙女春夏季韩版可爱连衣裙女',0,38.00,128.00,'//img.alicdn.com/bao/uploaded/i4/409204732/TB2oKycjwxlpuFjSszbXXcSVpXa_!!409204732.jpg_240x240.jpg',1493965813,2),('544895445959',111714585,'2017新款夏季睡衣女夏纯棉短袖短裤可爱卡通夏天全棉家居服女套装',0,39.00,138.00,'//img.alicdn.com/bao/uploaded/i2/409204732/TB2uoOrdR8kpuFjSspeXXc7IpXa_!!409204732.jpg_240x240.jpg',1493965813,3),('527214495924',111714585,'夏季短袖短裤情侣睡衣纯棉可爱卡通男女全棉半袖家居服加大码套装',1,39.00,128.00,'//img.alicdn.com/bao/uploaded/i4/409204732/TB2Ak_SkpXXXXX6XpXXXXXXXXXX_!!409204732.jpg_240x240.jpg',1493965813,5),('45694242221',111714585,'爆款2015亲子装夏款条纹短袖t恤套装一家三口套装母女沙滩亲子装',2,48.00,96.00,'//img.alicdn.com/bao/uploaded/i3/TB12c81HVXXXXaOXXXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg',1493965813,4),('536657067566',111714585,'睡衣女秋季长袖纯棉薄款春秋韩版休闲宽松女士夏季全棉家居服套装',1,55.00,158.00,'//img.alicdn.com/bao/uploaded/i3/409204732/TB2bHabuXXXXXa.XpXXXXXXXXXX_!!409204732.jpg_240x240.jpg',1493965813,1),('537485968965',111714585,'韩版情侣睡衣女卡通可爱休闲夏长袖纯棉春秋季新款男士家居服套装',1,49.00,138.00,'//img.alicdn.com/bao/uploaded/i3/409204732/TB2mR_bahbxQeBjy1XdXXXVBFXa_!!409204732.jpg_240x240.jpg',1493965813,4),('525656414685',111714585,'天天特价睡裙短袖甜美公主夏款睡衣女夏天纯棉可爱大码韩版家居服',3,38.00,128.00,'//img.alicdn.com/bao/uploaded/i4/TB1PdSTLXXXXXbNXFXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg',1493965813,3),('547107227963',111714585,'睡裙女夏季韩版纯棉短袖公主甜美可爱卡通休闲性感连衣裙家居服女',1,38.00,128.00,'//img.alicdn.com/bao/uploaded/i2/409204732/TB263Igj5lnpuFjSZFgXXbi7FXa_!!409204732.jpg_240x240.jpg',1493965813,3),('532636312175',111714585,'情侣睡衣夏季女士纯棉短袖卡通可爱韩版家居服男士休闲加大码套装',0,39.00,148.00,'//img.alicdn.com/bao/uploaded/i4/409204732/TB243rQppXXXXaEXpXXXXXXXXXX_!!409204732.jpg_240x240.jpg',1493965813,3),('537566995481',111714585,'春秋季情侣睡衣纯棉女士卡通长袖长裤男士宽松秋季大码家居服套装',0,49.00,138.00,'//img.alicdn.com/bao/uploaded/i4/409204732/TB27TcCaRYxQeBjSszeXXa0spXa_!!409204732.jpg_240x240.jpg',1493965813,1),('520361596459',111714585,'【天天特价】夏季纯棉睡衣女士无袖背心睡裙女吊带可爱性感家居服',2,38.00,68.00,'//img.alicdn.com/bao/uploaded/i1/T14W9IFy4bXXXXXXXX_!!0-item_pic.jpg_240x240.jpg',1493965813,3),('543199951594',111714585,'秋冬季情侣睡衣女珊瑚绒可爱加厚加绒保暖法兰绒冬款套装家居服男',2,88.00,288.00,'//img.alicdn.com/bao/uploaded/i3/409204732/TB20z9xagJkpuFjSszcXXXfsFXa_!!409204732.jpg_240x240.jpg',1493965813,0),('541536755070',111714585,'冬季保暖纯棉夹棉睡衣女士长袖长裤三层加厚棉袄韩家居服秋冬套装',1,168.00,288.00,'//img.alicdn.com/bao/uploaded/i3/409204732/TB20V3ea4Rzc1FjSZFPXXcGAFXa_!!409204732.jpg_240x240.jpg',1493965813,0),('540676669353',111714585,'秋冬季三层加厚夹棉睡衣女棉袄纯棉夹层韩潮家居服长袖全棉质套装',0,129.00,288.00,'//img.alicdn.com/bao/uploaded/i2/409204732/TB2v2j4aQ1M.eBjSZFOXXc0rFXa_!!409204732.jpg_240x240.jpg',1493965813,0),('538494306569',111714585,'韩版睡衣女春秋季纯棉长袖常规可外穿家居服女式秋天运动套装薄款',0,168.00,288.00,'//img.alicdn.com/bao/uploaded/i3/409204732/TB2EtaoXhvC11Bjy1zdXXXPcVXa_!!409204732.jpg_240x240.jpg',1493965813,0),('538480092265',111714585,'韩版睡衣女春秋季纯棉长袖常规可外穿家居服女式秋天运动套装薄款',1,88.00,168.00,'//img.alicdn.com/bao/uploaded/i3/409204732/TB2NZg8aGm5V1BjSspjXXcGFpXa_!!409204732.jpg_240x240.jpg',1493965813,0),('538444338863',111714585,'睡衣女士长袖纯棉薄款春秋天韩版休闲宽松夏季全棉家居服套装秋季',0,88.00,168.00,'//img.alicdn.com/bao/uploaded/i3/409204732/TB2YAqFaWe5V1Bjy1zjXXa08VXa_!!409204732.jpg_240x240.jpg',1493965813,0),('538273295202',111714585,'睡衣女秋季长袖纯棉薄款春秋韩版休闲宽松女士夏季全棉家居服套装',0,88.00,168.00,'//img.alicdn.com/bao/uploaded/i3/409204732/TB2B4eZaGi5V1BjSszcXXaDLXXa_!!409204732.jpg_240x240.jpg',1493965813,0),('538012786542',111714585,'法兰绒情侣睡衣休闲加厚冬季套装男睡衣女士可爱长袖秋季珊瑚绒套',0,89.00,189.00,'//img.alicdn.com/bao/uploaded/i1/409204732/TB2MpcUXGe5V1BjSszeXXc3zXXa_!!409204732.jpg_240x240.jpg',1493965813,0),('536965743426',111714585,'韩版秋季情侣睡衣女纯棉长袖休闲春秋睡衣男士卡通圆领家居服套装',1,49.00,138.00,'//img.alicdn.com/bao/uploaded/i3/409204732/TB2iM0dXqzyQeBjy0FgXXbnsVXa_!!409204732.jpg_240x240.jpg',1493965813,0),('525260784008',111714585,'冬季纯棉夹棉睡衣女士长袖长裤三层加厚珊瑚绒家居服秋冬保暖套装',0,128.00,288.00,'//img.alicdn.com/bao/uploaded/i3/409204732/TB2amjcjVXXXXa5XpXXXXXXXXXX_!!409204732.jpg_240x240.jpg',1493965813,0),('525060088939',111714585,'秋冬季法兰绒夹棉睡衣女士长袖三层加厚棉袄冬天珊瑚绒家居服套装',1,158.00,238.00,'//img.alicdn.com/bao/uploaded/i1/TB1XQ9hKFXXXXbGXXXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg',1493965813,0),('524996079880',111714585,'秋冬款三层加厚法兰绒夹棉睡衣女款长袖冬天珊瑚绒棉袄家居服套装',0,158.00,299.00,'//img.alicdn.com/bao/uploaded/i4/TB1H6CeKVXXXXXyaXXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg',1493965813,0),('547340880744',111714585,'韩版夏季女纯棉短袖公主甜美中裙加肥加大码卡通休闲睡裙家居服女',0,38.00,128.00,'//img.alicdn.com/bao/uploaded/i4/409204732/TB282c.kNxmpuFjSZFNXXXrRXXa_!!409204732.jpg_240x240.jpg',1493965813,0),('547291258437',111714585,'韩版睡裙女夏纯棉短袖清新公主学生甜美可爱宽松中短裙睡衣女夏天',0,38.00,128.00,'//img.alicdn.com/bao/uploaded/i1/409204732/TB2JnZSkrBmpuFjSZFAXXaQ0pXa_!!409204732.jpg_240x240.jpg',1493965813,0),('546913111078',111714585,'夏季女士纯棉睡裙女可爱夏天休闲短袖睡衣宽松韩版少女卡通家居服',0,38.00,128.00,'//img.alicdn.com/bao/uploaded/i4/409204732/TB2pD1.h3JkpuFjSszcXXXfsFXa_!!409204732.jpg_240x240.jpg',1493965813,0),('541334096356',111714585,'冬季加厚三层夹棉睡衣珊瑚绒夹棉情侣睡衣女冬款保暖家居服套装男',0,168.00,299.00,'//img.alicdn.com/bao/uploaded/i1/409204732/TB2inVwbZeK.eBjSszgXXczFpXa_!!409204732.jpg_240x240.jpg',1493965813,0),('540303908520',111714585,'秋冬季三层夹棉睡衣女长袖加厚纯棉夹层家居服可外穿冬季运动套装',1,148.00,288.00,'//img.alicdn.com/bao/uploaded/i4/409204732/TB2uNu7X.OO.eBjSZFLXXcxmXXa_!!409204732.jpg_240x240.jpg',1493965813,0),('538304038039',111714585,'春秋季女士纯棉睡衣女款秋天长袖韩版花卉加大码可外穿家居服套装',0,88.00,168.00,'//img.alicdn.com/bao/uploaded/i1/409204732/TB2Cuw5aqi5V1BjSsplXXaVYpXa_!!409204732.jpg_240x240.jpg',1493965813,0),('538300209333',111714585,'韩版睡衣女春秋季纯棉长袖常规可外穿家居服女式秋天运动套装薄款',0,88.00,168.00,'//img.alicdn.com/bao/uploaded/i4/409204732/TB2xVq9aqm5V1BjSsppXXcMCVXa_!!409204732.jpg_240x240.jpg',1493965813,0),('538288820894',111714585,'韩版2016情侣睡衣女秋季长袖纯棉大码卡通休闲夏季薄款套装家居服',0,88.00,168.00,'//img.alicdn.com/bao/uploaded/i4/409204732/TB2P4AWaai5V1BjSsphXXaEpXXa_!!409204732.jpg_240x240.jpg',1493965813,0),('538216044777',111714585,'韩版情侣睡衣女卡通可爱休闲夏长袖纯棉春秋季新款男士家居服套装',0,88.00,168.00,'//img.alicdn.com/bao/uploaded/i2/409204732/TB2LLNTaai5V1BjSszgXXbHLpXa_!!409204732.jpg_240x240.jpg',1493965813,0),('537536516350',111714585,'韩版2015情侣睡衣女秋季长袖纯棉大码卡通休闲秋季薄款套装家居服',2,49.00,138.00,'//img.alicdn.com/bao/uploaded/i4/409204732/TB2KtBcaxjxQeBjSspcXXcQlXXa_!!409204732.jpg_240x240.jpg',1493965813,0),('531134257512',111714585,'2016夏季男士睡衣纯棉短袖套头睡衣男款加大码薄款夏男家居服套装',1,45.00,129.00,'//img.alicdn.com/bao/uploaded/i1/409204732/TB25izWoXXXXXXLXFXXXXXXXXXX_!!409204732.jpg_240x240.jpg',1493965813,1),('530507475435',111714585,'睡衣女士夏季短袖短裤纯棉可爱卡通韩版套头家居服加大码薄款套装',0,59.00,148.00,'//img.alicdn.com/bao/uploaded/i4/409204732/TB2C90QnFXXXXawXpXXXXXXXXXX_!!409204732.jpg_240x240.jpg',1493965813,0),('525296116804',111714585,'冬季纯棉针织夹棉睡衣女士长袖三层加厚加大码棉袄家居服秋冬套装',0,128.00,288.00,'//img.alicdn.com/bao/uploaded/i4/TB1B9nUKVXXXXb0XFXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg',1493965813,0),('524474864262',111714585,'2016冬季新款男士法兰绒睡衣加厚韩版休闲珊瑚绒家居服男套装青年',2,96.00,228.00,'//img.alicdn.com/bao/uploaded/i3/TB14yrcKXXXXXb3XXXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg',1493965813,0),('522724510784',111714585,'2016冬季法兰绒睡衣女士加厚长袖睡衣女秋冬珊瑚绒卡通家居服套装',0,89.00,198.00,'//img.alicdn.com/bao/uploaded/i4/TB1RKxdJVXXXXbjXVXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg',1493965813,0),('521311339499',111714585,'睡衣女春秋纯棉长袖长裤休闲宽松家居服韩版卡通外穿全棉薄款秋季',0,49.00,188.00,'//img.alicdn.com/bao/uploaded/i1/TB18ZmuJXXXXXbEaXXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg',1493965813,0),('520856120435',111714585,'2015春秋款睡衣女式夏纯棉长袖长裤常规韩版时尚可外穿家居服薄款',0,59.00,136.00,'//img.alicdn.com/bao/uploaded/i2/TB1nnOBIpXXXXcVXVXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg',1493965813,0),('45329065307',111714585,'2016男士睡衣夏季纯棉短袖全棉睡衣男款大码薄款夏款男家居服套装',0,57.00,108.00,'//img.alicdn.com/bao/uploaded/i2/TB1eTwQHVXXXXcsXVXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg',1493965813,0),('44938570996',111714585,'夏季情侣睡衣男女短袖纯棉女式春款家居服睡衣套装包邮2016春夏款',0,59.00,108.00,'//img.alicdn.com/bao/uploaded/i3/TB1M8kQHVXXXXb6XVXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg',1493965813,0),('539869283917',111714585,'春秋季夹棉睡衣女长袖加厚纯棉夹层家居服运动冬季可外穿套装2016',4,129.00,288.00,'//img.alicdn.com/bao/uploaded/i1/409204732/TB2eSyNacgb61BjSspjXXbhRVXa_!!409204732.jpg_240x240.jpg',1493965813,1),('538776440699',111714585,'春秋新款长袖女睡衣韩版可爱潮流纯棉睡衣女秋冬厚全棉家居服套装',0,88.00,178.00,'//img.alicdn.com/bao/uploaded/i3/409204732/TB2aRBbXR_B11BjSspcXXb0sVXa_!!409204732.jpg_240x240.jpg',1493965813,2),('522220272107',111714585,'睡衣女秋款纯棉长袖睡衣韩版女夏休闲可外穿运动套装女秋天家居服',1,45.00,136.00,'//img.alicdn.com/bao/uploaded/i1/TB1hLHcJFXXXXbgXpXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg',1493965813,2),('543985267564',111714585,'夹棉睡衣女长袖冬季三层加厚纯棉甜美棉袄加棉可爱冬天家居服套装',5,108.00,299.00,'//img.alicdn.com/bao/uploaded/i3/409204732/TB2Yw3cbG8lpuFjy0FpXXaGrpXa_!!409204732.jpg_240x240.jpg',1493965813,1),('538694822649',111714585,'长袖睡衣女纯棉春秋韩版可外穿加大码休闲卡通修身家居服套装秋季',2,88.00,178.00,'//img.alicdn.com/bao/uploaded/i1/409204732/TB2Odk.XBjC11BjSszdXXbGFpXa_!!409204732.jpg_240x240.jpg',1493965813,1),('547367643551',111714585,'睡裙女夏天纯棉韩版公主短袖中裙加肥加大码休闲睡衣女夏季起居服',0,38.00,128.00,'//img.alicdn.com/bao/uploaded/i4/409204732/TB2YJToiY0kpuFjy0FjXXcBbVXa_!!409204732.jpg_240x240.jpg',1493965813,2),('547221126473',111714585,'2017韩国时尚卡通睡衣连衣裙纯棉短袖清新公主甜美女夏学生家居服',0,38.00,128.00,'//img.alicdn.com/bao/uploaded/i3/409204732/TB2ssXLkxBmpuFjSZFDXXXD8pXa_!!409204732.jpg_240x240.jpg',1493965813,2),('547411692672',111714585,'睡裙女夏天纯棉短袖中长款可爱学生韩国时尚简约睡衣睡裙家居服女',0,38.00,128.00,'//img.alicdn.com/bao/uploaded/i3/409204732/TB22wHRjmtkpuFjy0FhXXXQzFXa_!!409204732.jpg_240x240.jpg',1493965813,1),('547096004811',111714585,'韩版睡裙女夏季纯棉短袖清新公主学生甜美可爱宽松性感睡衣女夏秋',0,38.00,128.00,'//img.alicdn.com/bao/uploaded/i1/409204732/TB2ruaVkctnpuFjSZFKXXalFFXa_!!409204732.jpg_240x240.jpg',1493965813,1),('547013941485',111714585,'睡裙女夏季纯棉短袖长款女士清新韩版学生睡衣夏天短袖全棉家居服',1,38.00,128.00,'//img.alicdn.com/bao/uploaded/i3/409204732/TB2_SN_j0RopuFjSZFtXXcanpXa_!!409204732.jpg_240x240.jpg',1493965813,0),('537104774554',111714585,'2016新款秋季情侣长袖睡衣女士纯棉秋天男士韩版可外穿家居服套装',1,49.00,138.00,'//img.alicdn.com/bao/uploaded/i4/409204732/TB2swTPXzzyQeBjy1zdXXaInpXa_!!409204732.jpg_240x240.jpg',1493965813,2),('527683981490',111714585,'夏季睡裙女式纯棉夏款短袖中裙女装睡衣女士家居服加大码裙子2016',0,39.00,169.00,'//img.alicdn.com/bao/uploaded/i4/409204732/TB2K1bPkVXXXXbAXpXXXXXXXXXX_!!409204732.jpg_240x240.jpg',1493965813,2),('538140908463',111714585,'法兰绒情侣睡衣休闲加厚冬季套装男睡衣女士可爱长袖秋季珊瑚绒套',1,89.00,189.00,'//img.alicdn.com/bao/uploaded/i3/409204732/TB2pu9QXV55V1Bjy0FoXXbVjFXa_!!409204732.jpg_240x240.jpg',1493965813,1),('547000075932',111714585,'2017韩国时尚卡通睡衣睡裙女夏短袖纯棉春夏季韩版可爱学生连衣裙',0,38.00,128.00,'//img.alicdn.com/bao/uploaded/i4/409204732/TB2fVGOil0kpuFjy1zdXXXuUVXa_!!409204732.jpg_240x240.jpg',1493965813,2),('537100535103',111714585,'2016新款秋季情侣长袖睡衣女士纯棉套装秋天男士韩版可外穿家居服',0,49.00,138.00,'//img.alicdn.com/bao/uploaded/i1/409204732/TB26OqwXGnyQeBjy1zkXXXmyXXa_!!409204732.jpg_240x240.jpg',1493965813,0),('45617288502',111714585,'韩版女款睡衣夏季纯棉短袖睡衣夏女式薄款套装女装卡通夏天家居服',0,48.00,138.00,'//img.alicdn.com/bao/uploaded/i4/409204732/TB2x8bpuXXXXXbcXpXXXXXXXXXX_!!409204732.jpg_240x240.jpg',1493965813,1),('44949054831',111714585,'夏天睡衣女夏款春秋纯棉短袖2015韩版女式家居服夏季休闲女士套装',1,59.00,108.00,'//img.alicdn.com/bao/uploaded/i4/TB1VIQ5HVXXXXcQXFXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg',1493965813,1) [ RunTime:0.051783s ]
+
+---------------------------------------------------------------
+[ 2017-05-05T15:04:41+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb3
+[ log ] taoke.com/index/test/tb3 [运行时间：0.671681s][吞吐率：1.49req/s] [内存消耗：2,275.64kb] [文件加载：65]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb3',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb3' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.415018s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.221039s ]
+[ info ] [ RUN ] app\index\controller\Test->tb3[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.356093s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.013503s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.012184s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.012483s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.004753s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.022777s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.109256s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.017445s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.053495s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.006106s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.006104s ]
+[ error ] [1]Class 'TbkItemGetRequest' not found[C:\WWW\taoke\application\index\controller\Test.php:213]
+
+---------------------------------------------------------------

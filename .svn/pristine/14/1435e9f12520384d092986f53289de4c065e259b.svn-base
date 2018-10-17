@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Language" content="utf-8" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="author" content="" /> 
+<meta name="Copyright" content="" /> 
+<meta name="description" content="" /> 
+<meta name="keywords"content="" /> 
+<link rel="icon" href="" type="image/x-icon" /> 
+<link rel="shortcut icon" href="" type="image/x-icon" /> 
+<link href="" rel="stylesheet" type="text/css" /> 
+<title></title> 
+<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript"> 
+var i = 0;
+function alertmsg()
+{
+	i++;
+	var msg = '{"a":"alert.msg","p":{"title":"消息标题'+i+'","content":"消息内容'+i+'","show_top":"1"}}';
+	var topic = $('#topic').val();
+	$.post("/index/index/mqtt",{topic:topic,msg:msg},function(data){
+		alert(data.msg);
+	},'json');	
+}
+function alerturlmsg()
+{
+	i++;
+	var msg = '{"a":"alert.urlmsg","p":{"title":"消息标题","content":"消息内容","url":"http://www.baidu.com","show_top":"1"}}';
+	var topic = $('#topic').val();
+	$.post("/index/index/mqtt",{topic:topic,msg:msg},function(data){
+		alert(data.msg);
+	},'json');	
+}
+function openview()
+{
+	i++;
+	var viewname = $('#viewname').val();
+	var msg = '{"a":"open.view","p":{"view":"'+viewname+'"}}';
+	var topic = $('#topic').val();
+	$.post("/index/index/mqtt",{topic:topic,msg:msg},function(data){
+		alert(data.msg);
+	},'json');	
+}
+function openviewmsg()
+{
+	var viewname = $('#viewname1').val();
+	var msg = '{"a":"open.viewmsg","p":{"title":"消息标题","content":"消息内容","view":"'+viewname+'"}}';
+	var topic = $('#topic').val();
+	$.post("/index/index/mqtt",{topic:topic,msg:msg},function(data){
+		alert(data.msg);
+	},'json');
+}
+function datarefresh()
+{
+	var path = $('#path').val();
+	var arg_name = $('#arg_name').val();
+	var arg_value = $('#arg_value').val();
+	var msg = '{"a":"data.refresh","p":{"path":"'+path+'","arg_name":"'+arg_name+'","arg_value":"'+arg_value+'"}}';
+	var topic = $('#topic').val();
+	$.post("/index/index/mqtt",{topic:topic,msg:msg},function(data){
+		alert(data.msg);
+	},'json');	
+}
+function findviewcarousel()
+{
+	var msg = '{"a":"find.view.carousel","p":""}';
+	var topic = $('#topic').val();
+	$.post("/index/index/mqtt",{topic:topic,msg:msg},function(data){
+		alert(data.msg);
+	},'json');	
+}
+function findviewnotification()
+{
+	var msg = '{"a":"find.view.notification","p":""}';
+	var topic = $('#topic').val();
+	$.post("/index/index/mqtt",{topic:topic,msg:msg},function(data){
+		alert(data.msg);
+	},'json');	
+}
+function findviewbuttons()
+{
+	var msg = '{"a":"find.view.buttons","p":""}';
+	var topic = $('#topic').val();
+	$.post("/index/index/mqtt",{topic:topic,msg:msg},function(data){
+		alert(data.msg);
+	},'json');	
+}
+function findviewleaderboard()
+{
+	var msg = '{"a":"find.view.leaderboard","p":""}';
+	var topic = $('#topic').val();
+	$.post("/index/index/mqtt",{topic:topic,msg:msg},function(data){
+		alert(data.msg);
+	},'json');	
+}
+function datanewmsg()
+{
+	var msg = '{"a":"data.newmsg","p":{"new_msg_n":1}}';
+	var topic = $('#topic').val();
+	$.post("/index/index/mqtt",{topic:topic,msg:msg},function(data){
+		alert(data.msg);
+	},'json');
+}
+</script> 
+</head> 
+<body> 
+topic:<input type="text" id="topic" name="topic" value="135b4e41-324c-4f8e-b0a6-366d31542a15/agent/1" />
+<hr />
+<input type="button" value="alert.msg" name="alert.msg" onclick="alertmsg()" /> 
+<hr />
+<input type="button" value="alerturl.msg" name="alert.msg" onclick="alerturlmsg()" /> 
+<hr />
+viewname:<input type="text" id="viewname" name="viewname" />
+<input type="button" value="open.view" name="open.view" onclick="openview()" /> 
+<hr />
+viewname:<input type="text" id="viewname1" name="viewname1" />
+<input type="button" value="open.viewmsg" name="open.viewmsg" onclick="openviewmsg()" />
+<hr />
+path:<input type="text" id="path" name="path" value="/api/user/info"/>
+arg_name:<input type="text" id="arg_name" name="arg_name" value="field"/>
+arg_value:<input type="text" id="arg_value" name="arg_value" value="call_info"/>
+ <input type="button" value="data.refresh" name="data.refresh" onclick="datarefresh()" />
+<hr />
+<input type="button" value="find.view.carousel" name="find.view.carousel" onclick="findviewcarousel()" /> 
+<hr />
+<input type="button" value="find.view.notification" name="find.view.notification" onclick="findviewnotification()" /> 
+<hr />
+<input type="button" value="find.view.buttons" name="find.view.buttons" onclick="findviewbuttons()" /> 
+<hr />
+<input type="button" value="find.view.leaderboard" name="find.view.leaderboard" onclick="findviewleaderboard()" /> 
+<hr />
+<input type="button" value="data.newmsg" name="data.newmsg" onclick="datanewmsg()" /> 
+<hr />
+</body> 
+</html> 
+</body> 
+</html> 

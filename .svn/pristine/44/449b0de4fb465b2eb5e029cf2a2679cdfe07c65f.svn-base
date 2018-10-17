@@ -1,0 +1,18 @@
+DROP TABLE IF EXISTS `v2_onecall_userlog`;
+CREATE TABLE `v2_onecall_userlog` (
+	`id` INT(10) NULL AUTO_INCREMENT,
+	`agent_id` INT(10) NULL DEFAULT '0' COMMENT '代理ID',
+	`username` VARCHAR(50) NULL DEFAULT '' COMMENT '用户号码',
+	`user_id` INT(10) NULL DEFAULT '0' COMMENT '用户ID',
+	`index_num` TINYINT(2) UNSIGNED NULL DEFAULT '1' COMMENT '一键拨号索引',
+	`name` VARCHAR(32) NULL DEFAULT '' COMMENT '一键拨号名称',
+	`callerd` VARCHAR(20) NULL DEFAULT '' COMMENT '拨号号码',
+	`created` INT UNSIGNED NULL DEFAULT '0' COMMENT '创建时间',
+	`updated` INT UNSIGNED NULL DEFAULT '0' COMMENT '更新时间',
+	PRIMARY KEY (`id`),
+	INDEX `user_id` (`user_id`),
+	INDEX `agent_id` (`agent_id`)
+)
+COMMENT='一键拨号绑定数据'
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB;

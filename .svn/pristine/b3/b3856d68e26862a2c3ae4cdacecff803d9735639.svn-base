@@ -1,0 +1,2828 @@
+[ 2017-05-03T16:47:23+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb
+[ log ] taoke.com/index/test/tb [运行时间：0.724599s][吞吐率：1.38req/s] [内存消耗：2,237.83kb] [文件加载：64]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.110963s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.037471s ]
+[ info ] [ RUN ] app\index\controller\Test->tb[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.074618s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.005012s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.006309s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.007998s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.003303s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.004360s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.003837s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.004423s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.004653s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.003800s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.011076s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_shop` [ RunTime:0.307482s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_shop` WHERE  (  sid = '103337099' ) LIMIT 1 [ RunTime:0.007640s ]
+[ sql ] [ SQL ] INSERT INTO `tk_admin_shop` (`cid` , `created` , `modified` , `nick` , `pic_path` , `title` , `delivery_score` , `item_score` , `service_score` , `update_time` , `sid`) VALUES (0 , '2013-04-08 15:46:42' , '2017-05-03 16:45:43' , '卡多丽旗舰店' , '/20/a2/TB1g5odQVXXXXa_XXXXSutbFXXX.jpg' , '卡多丽旗舰店' , '4.8' , '4.9' , '4.8' , 1493801243 , 103337099) [ RunTime:0.003796s ]
+[ sql ] [ SQL ] DELETE FROM `tk_admin_shop`    WHERE  `sid` = 103337099 [ RunTime:0.003719s ]
+[ sql ] [ SQL ] INSERT INTO tk_shop_category(sid,cid,name,parent_cid,pic_url,sort_order,type,update_time) VALUES(103337099,1306570132,'靴子',0,'',1,'manual_type',1493801243),(103337099,1306570133,'单鞋',0,'',2,'manual_type',1493801243),(103337099,1306572528,'凉鞋',0,'',3,'manual_type',1493801243) [ RunTime:0.010137s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T16:48:58+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb
+[ log ] taoke.com/index/test/tb [运行时间：4.578557s][吞吐率：0.22req/s] [内存消耗：2,241.09kb] [文件加载：64]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.198019s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.189511s ]
+[ info ] [ RUN ] app\index\controller\Test->tb[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.089958s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.027817s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.036376s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.012459s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.015643s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.009697s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.006712s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.036376s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.052323s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.046435s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.031225s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_shop` [ RunTime:0.049325s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_shop` WHERE  (  sid = '103337099' ) LIMIT 1 [ RunTime:0.017543s ]
+[ sql ] [ SQL ] INSERT INTO `tk_admin_shop` (`cid` , `created` , `modified` , `nick` , `pic_path` , `title` , `delivery_score` , `item_score` , `service_score` , `update_time` , `sid`) VALUES (0 , '2013-04-08 15:46:42' , '2017-05-03 16:45:43' , '卡多丽旗舰店' , '/20/a2/TB1g5odQVXXXXa_XXXXSutbFXXX.jpg' , '卡多丽旗舰店' , '4.8' , '4.9' , '4.8' , 1493801337 , 103337099) [ RunTime:0.055535s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_shop_category` [ RunTime:0.050098s ]
+[ sql ] [ SQL ] DELETE FROM `tk_shop_category`    WHERE  `sid` = 103337099 [ RunTime:0.109717s ]
+[ sql ] [ SQL ] INSERT INTO tk_shop_category(sid,cid,name,parent_cid,pic_url,sort_order,type,update_time) VALUES(103337099,1306570132,'靴子',0,'',1,'manual_type',1493801338),(103337099,1306570133,'单鞋',0,'',2,'manual_type',1493801338),(103337099,1306572528,'凉鞋',0,'',3,'manual_type',1493801338) [ RunTime:0.136944s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T16:49:18+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb
+[ log ] taoke.com/index/test/tb [运行时间：0.717628s][吞吐率：1.39req/s] [内存消耗：2,248.87kb] [文件加载：64]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.160424s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.070932s ]
+[ info ] [ RUN ] app\index\controller\Test->tb[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.080427s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.006706s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.024668s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.018033s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.016217s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.018969s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.013829s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.013704s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.008145s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.005585s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.005922s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_shop` [ RunTime:0.057932s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_shop` WHERE  (  sid = '111714585' ) LIMIT 1 [ RunTime:0.039356s ]
+[ sql ] [ SQL ] INSERT INTO `tk_admin_shop` (`bulletin` , `cid` , `created` , `description` , `modified` , `nick` , `pic_path` , `title` , `delivery_score` , `item_score` , `service_score` , `update_time` , `sid`) VALUES ('<p style=\"text-align: center\"><span style=\"font-size: 24.0px\"><span style=\"font-family: kaiti_gb2312\"><strong><font color=\"#ff0000\"><span style=\"line-height: 36.0px\">欢迎光临伊人佳梦睡衣店！</span></font></strong></span></span></p><p style=\"text-align: center\"><span style=\"font-size: 24.0px\"><span style=\"font-family: kaiti_gb2312\"><strong><font color=\"#ff0000\"><span style=\"line-height: 36.0px\">本店所有产品都是专柜正品，</span></font></strong></span></span><strong style=\"font-family: kaiti_gb2312;font-size: 24.0px;line-height: 1.5\"><font color=\"#ff0000\">如发现质量问题或产品瑕疵，</font></strong></p><p style=\"text-align: center\"><span style=\"font-size: 24.0px\"><span style=\"font-family: kaiti_gb2312\"><strong><font color=\"#ff0000\"><span style=\"line-height: 36.0px\">一律享受7天免费退换，</span></font></strong></span></span><strong style=\"font-family: kaiti_gb2312; font-size: 24px; line-height: 1.5\"><font color=\"#ff0000\">我们承诺用心服务每一位客户！</font></strong></p>' , 14 , '2014-06-26 11:16:08' , '<p>伊人佳梦，给您的居家旅行，提供舒适与享受！我们的睡衣，给您贴心的感受，要想睡觉睡得好，伊人佳梦真是好！</p>' , '2017-05-03 12:46:52' , 'k得过去' , '/d9/45/TB19RW7LpXXXXaSaXXXSutbFXXX.jpg' , '伊人佳梦家居服睡衣店' , '4.7' , '4.7' , '4.7' , 1493801357 , 111714585) [ RunTime:0.026120s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_shop_category` [ RunTime:0.003953s ]
+[ sql ] [ SQL ] DELETE FROM `tk_shop_category`    WHERE  `sid` = 111714585 [ RunTime:0.003466s ]
+[ sql ] [ SQL ] INSERT INTO tk_shop_category(sid,cid,name,parent_cid,pic_url,sort_order,type,update_time) VALUES(111714585,1069362717,'按季节分',0,'',1,'manual_type',1493801358),(111714585,1069362718,'夏季新品',1069362717,'',1,'manual_type',1493801358),(111714585,1069362719,'春季新品',1069362717,'',2,'manual_type',1493801358),(111714585,1069362720,'秋季新品',1069362717,'',3,'manual_type',1493801358),(111714585,1086836564,'冬季新品',1069362717,'',4,'manual_type',1493801358),(111714585,1069362721,'按人群分',0,'',2,'manual_type',1493801358),(111714585,1069362722,'情侣',1069362721,'',1,'manual_type',1493801358),(111714585,1069362723,'男',1069362721,'',2,'manual_type',1493801358),(111714585,1069362724,'女',1069362721,'',3,'manual_type',1493801358),(111714585,1069362725,'亲子',1069362721,'',4,'manual_type',1493801358),(111714585,1069362726,'按款式分',0,'',3,'manual_type',1493801358),(111714585,1069362727,'套装2件装',1069362726,'',1,'manual_type',1493801358),(111714585,1069362728,'套件3件套',1069362726,'',2,'manual_type',1493801358),(111714585,1069362729,'睡裙',1069362726,'',3,'manual_type',1493801358),(111714585,1069362730,'睡裙2件套',1069362726,'',4,'manual_type',1493801358),(111714585,1069362731,'睡袍',1069362726,'',5,'manual_type',1493801358),(111714585,1069362732,'按面料分',0,'',4,'manual_type',1493801358),(111714585,1069362733,'针织棉',1069362732,'',1,'manual_type',1493801358),(111714585,1069362734,'莫代尔',1069362732,'',2,'manual_type',1493801358),(111714585,1069362735,'法兰绒',1069362732,'',3,'manual_type',1493801358),(111714585,1069362736,'三层夹棉',1069362732,'',4,'manual_type',1493801358),(111714585,1069362737,'天鹅绒',1069362732,'',5,'manual_type',1493801358),(111714585,1069362738,'羊毛绒',1069362732,'',6,'manual_type',1493801358),(111714585,1263561144,'纯棉',1069362732,'',7,'manual_type',1493801358),(111714585,1140025991,'夏季爆款',0,'',5,'manual_type',1493801358) [ RunTime:0.018401s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:19:48+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：0.685012s][吞吐率：1.46req/s] [内存消耗：2,173.29kb] [文件加载：58]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.114163s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.033500s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.049451s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.029035s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.006223s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.003631s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.011369s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.003408s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.005119s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.004120s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.004362s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.006419s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.004284s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:20:50+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：7.566611s][吞吐率：0.13req/s] [内存消耗：2,173.48kb] [文件加载：58]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:3.304092s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:4.226814s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.017761s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.348112s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.448273s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.714586s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.763983s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.601632s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.877914s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.672866s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.634897s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:1.077507s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.357183s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:21:09+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：3.278296s][吞吐率：0.31req/s] [内存消耗：2,173.48kb] [文件加载：58]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:1.954095s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:1.288848s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.551148s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.488537s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.465232s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.204648s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.230462s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.231256s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.128879s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.227461s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.289144s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.187391s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.218282s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:21:30+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：7.653986s][吞吐率：0.13req/s] [内存消耗：2,173.48kb] [文件加载：58]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:2.755825s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:4.865365s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.644108s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.456696s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.529193s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.644997s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.466361s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.541689s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.764060s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.751844s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:1.066502s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:1.216930s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.518912s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:21:50+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：6.232015s][吞吐率：0.16req/s] [内存消耗：2,111.96kb] [文件加载：56]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:3.892644s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:2.310242s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.608468s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.493425s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:1.069610s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:1.178008s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.528293s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.407035s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.477263s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.292588s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.492219s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.369582s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.265796s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:22:37+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：1.046969s][吞吐率：0.96req/s] [内存消耗：2,173.49kb] [文件加载：58]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.803307s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.092202s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.367776s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.396879s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.011965s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.006363s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.004002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.015878s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.014211s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.004786s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.011359s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.031295s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.008887s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:24:15+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：3.519223s][吞吐率：0.28req/s] [内存消耗：2,173.55kb] [文件加载：58]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:1.308373s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:1.712855s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.367608s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.203381s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.266686s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.210566s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.246893s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.244631s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.199046s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.284360s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.408019s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.262310s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.308085s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:25:34+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：0.945707s][吞吐率：1.06req/s] [内存消耗：2,173.51kb] [文件加载：58]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.050657s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.057591s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013700s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.004707s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.004669s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.005587s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.007093s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.006262s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.019099s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.007357s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.008097s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.004963s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:25:58+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：0.357296s][吞吐率：2.80req/s] [内存消耗：2,173.51kb] [文件加载：58]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.113305s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.114318s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.054479s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.025930s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.005404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.005068s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.006597s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.031476s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.019761s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.015796s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.023161s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.007473s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.010956s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:27:45+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：1.591022s][吞吐率：0.63req/s] [内存消耗：2,277.96kb] [文件加载：58]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.146053s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.099437s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.078162s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.008907s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.005062s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.008081s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.030017s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.004970s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.007433s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.008709s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.021290s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.023367s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.028532s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:28:16+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：1.115266s][吞吐率：0.90req/s] [内存消耗：2,278.02kb] [文件加载：58]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.441390s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.095347s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066751s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.324786s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.013109s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.009024s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.013089s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.029198s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.005749s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.009599s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.008734s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.006435s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.030098s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:28:36+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：0.663463s][吞吐率：1.51req/s] [内存消耗：2,278.02kb] [文件加载：58]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.052006s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.078341s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012452s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.005586s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.007298s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.007447s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.005712s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.039813s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.006627s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.006390s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.010647s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.003855s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.005583s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:29:56+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：0.733511s][吞吐率：1.36req/s] [内存消耗：2,278.19kb] [文件加载：58]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.100265s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.061329s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.039394s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.004700s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.026501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.004950s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.005784s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.005561s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.025192s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.007121s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.005322s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.005698s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.006571s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:30:05+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：0.630357s][吞吐率：1.59req/s] [内存消耗：2,278.19kb] [文件加载：58]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.076804s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.034138s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.038099s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.006224s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.008744s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.004777s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.003675s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.003574s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.004020s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.003693s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.003626s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.005414s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:30:13+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：0.677982s][吞吐率：1.47req/s] [内存消耗：2,278.20kb] [文件加载：58]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.174347s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.047189s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017122s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.012438s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.062712s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.008201s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.055449s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.005297s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.005299s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.010827s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.006400s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.007610s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.005962s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:30:20+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：0.547963s][吞吐率：1.82req/s] [内存消耗：2,286.19kb] [文件加载：58]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.103928s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.037375s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.071106s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.004080s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.005356s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.003785s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.005566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.005937s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.009158s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.003719s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.004483s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.004992s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.004274s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:30:30+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：1.179416s][吞吐率：0.85req/s] [内存消耗：2,278.19kb] [文件加载：58]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.720031s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.043307s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.669382s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.010772s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.008382s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.005761s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.010309s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.004864s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.014393s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.003637s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.005249s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.003334s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.007330s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:30:40+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：0.608207s][吞吐率：1.64req/s] [内存消耗：2,278.18kb] [文件加载：58]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.111125s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.042392s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.070890s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.003603s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.009331s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.004393s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.007454s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.006166s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.004610s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.009560s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.005397s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.005014s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.006899s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:30:48+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：1.208323s][吞吐率：0.83req/s] [内存消耗：2,278.03kb] [文件加载：58]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.117976s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.039053s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.042165s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.009457s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.038511s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.008195s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.006617s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.008020s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.005907s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.003446s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.008028s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.005723s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.002963s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:31:55+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：0.623602s][吞吐率：1.60req/s] [内存消耗：2,278.24kb] [文件加载：58]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.057092s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.044455s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014050s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.003921s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.016937s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.004932s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.004317s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.006193s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.003851s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.008954s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.008669s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.006786s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.004964s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:32:24+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：0.577591s][吞吐率：1.73req/s] [内存消耗：2,278.03kb] [文件加载：58]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.115217s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.033147s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.071878s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.010180s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.007048s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.004922s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.003722s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.003201s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.010098s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.003494s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.003565s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.004087s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:32:45+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：0.707454s][吞吐率：1.41req/s] [内存消耗：2,277.91kb] [文件加载：58]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.112333s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.036586s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.073642s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.006986s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.009260s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.006530s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.003985s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.004941s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.009267s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.003287s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.003939s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.003606s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.005364s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:34:03+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：0.827870s][吞吐率：1.21req/s] [内存消耗：2,265.85kb] [文件加载：58]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.375701s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.054249s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.030361s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.004183s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.007090s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.003296s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.315718s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.003986s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.028975s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.006678s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.003110s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.003148s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.003227s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:34:05+08:00 ] 127.0.0.1 127.0.0.1 GET /i/asynSearch.htm?_ksTS=1493804044834_176&callback=jsonp177&mid=w-10795111360-0&wid=10795111360&path=/search.htm&search=y&viewType=list
+[ log ] taoke.com/i/asynSearch.htm?_ksTS=1493804044834_176&callback=jsonp177&mid=w-10795111360-0&wid=10795111360&path=/search.htm&search=y&viewType=list [运行时间：0.183099s][吞吐率：5.46req/s] [内存消耗：1,971.68kb] [文件加载：54]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'i',
+    1 => 'asynSearch.htm',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pnm_cku822=233UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcE10Sn5KcyU%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nWmNdaV1kU25MdEx0TXhGeUx2TndMdEh2Qmw6%7CVWldfS0QMAw2CysXLg4gYQVsHHINYCcMLBMzDCkHUQc%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; _uab_collina=149380404419634873697252; cna=sqBrESSh0gQCAavUcgL74oNS',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://taoke.com/index/test/tb1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/i/asynSearch_htm' => '',
+  '_ksTS' => '1493804044834_176',
+  'callback' => 'jsonp177',
+  'mid' => 'w-10795111360-0',
+  'wid' => '10795111360',
+  'path' => '/search.htm',
+  'search' => 'y',
+  'viewType' => 'list',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.113389s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.040685s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068152s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.012448s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.006122s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.004067s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.005309s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.006113s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.005957s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.007690s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.003777s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.006347s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.004127s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:34:06+08:00 ] 127.0.0.1 127.0.0.1 GET /i/vdata.htm?mockDate&isAudit&_ksTS=1493804044847_201&callback=jsonp202
+[ log ] taoke.com/i/vdata.htm?mockDate&isAudit&_ksTS=1493804044847_201&callback=jsonp202 [运行时间：0.552205s][吞吐率：1.81req/s] [内存消耗：1,971.15kb] [文件加载：54]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'i',
+    1 => 'vdata.htm',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pnm_cku822=233UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcE10Sn5KcyU%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nWmNdaV1kU25MdEx0TXhGeUx2TndMdEh2Qmw6%7CVWldfS0QMAw2CysXLg4gYQVsHHINYCcMLBMzDCkHUQc%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; _uab_collina=149380404419634873697252; cna=sqBrESSh0gQCAavUcgL74oNS',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://taoke.com/index/test/tb1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/i/vdata_htm' => '',
+  'mockDate' => '',
+  'isAudit' => '',
+  '_ksTS' => '1493804044847_201',
+  'callback' => 'jsonp202',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.467867s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.055684s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.073368s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.004655s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.322037s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.046466s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.004686s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.010229s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.006269s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.004298s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.004462s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.009416s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.014996s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:34:15+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：0.603536s][吞吐率：1.66req/s] [内存消耗：2,267.63kb] [文件加载：58]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pnm_cku822=233UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcE10Sn5KcyU%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nWmNdaV1kU25MdEx0TXhGeUx2TndMdEh2Qmw6%7CVWldfS0QMAw2CysXLg4gYQVsHHINYCcMLBMzDCkHUQc%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; _uab_collina=149380404419634873697252; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AiAgnkl0mcc6G7wjQeNFotqLcCTyKQTz; isg=AqCgH28N7epyc1Hubq_qDZ62ca54nIRzEsnTtRqxbLtOFUA_wrlUA3Ym2wpv',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.113221s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.047240s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068241s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.010227s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.009696s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.003472s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.006042s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.006663s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.003943s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.003954s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.004342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.006296s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.016451s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:34:16+08:00 ] 127.0.0.1 127.0.0.1 GET /i/asynSearch.htm?_ksTS=1493804056152_179&callback=jsonp180&mid=w-10795111360-0&wid=10795111360&path=/search.htm&search=y&viewType=list
+[ log ] taoke.com/i/asynSearch.htm?_ksTS=1493804056152_179&callback=jsonp180&mid=w-10795111360-0&wid=10795111360&path=/search.htm&search=y&viewType=list [运行时间：0.738257s][吞吐率：1.35req/s] [内存消耗：1,972.45kb] [文件加载：54]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'i',
+    1 => 'asynSearch.htm',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=ApqaMwdWYzGsWXZ930GvFIyQakq8ex6l; isg=AktLnmiElhttM8rPCXbhnLG_2u8_1V9i7bAo1L1Ilwrh3Gs-RLDvsuk8wGvI; pnm_cku822=150UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcE11TXVBeS8%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nWmJaYlZvWGVHf0d5QnhFek53THdJfUhySmQy%7CVWldfS0QMAw2CSkVLg4gSTlXKEUCKQk2FikMWn4fYE4YTg%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://taoke.com/index/test/tb1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/i/asynSearch_htm' => '',
+  '_ksTS' => '1493804056152_179',
+  'callback' => 'jsonp180',
+  'mid' => 'w-10795111360-0',
+  'wid' => '10795111360',
+  'path' => '/search.htm',
+  'search' => 'y',
+  'viewType' => 'list',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.657258s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.052671s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008869s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.004219s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.305338s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.307101s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.011768s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.004414s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.003490s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.005631s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.006414s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.018876s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.008068s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:34:17+08:00 ] 127.0.0.1 127.0.0.1 GET /i/vdata.htm?mockDate&isAudit&_ksTS=1493804056170_204&callback=jsonp205
+[ log ] taoke.com/i/vdata.htm?mockDate&isAudit&_ksTS=1493804056170_204&callback=jsonp205 [运行时间：0.154754s][吞吐率：6.46req/s] [内存消耗：1,971.77kb] [文件加载：54]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'i',
+    1 => 'vdata.htm',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=ApqaMwdWYzGsWXZ930GvFIyQakq8ex6l; isg=AktLnmiElhttM8rPCXbhnLG_2u8_1V9i7bAo1L1Ilwrh3Gs-RLDvsuk8wGvI; pnm_cku822=150UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcE11TXVBeS8%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nWmJaYlZvWGVHf0d5QnhFek53THdJfUhySmQy%7CVWldfS0QMAw2CSkVLg4gSTlXKEUCKQk2FikMWn4fYE4YTg%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://taoke.com/index/test/tb1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/i/vdata_htm' => '',
+  'mockDate' => '',
+  'isAudit' => '',
+  '_ksTS' => '1493804056170_204',
+  'callback' => 'jsonp205',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.071741s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.045921s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010982s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.016582s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.005136s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.005824s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.008791s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.003946s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.010394s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.008614s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.005066s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.005227s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.004307s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:40:28+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：2.723530s][吞吐率：0.37req/s] [内存消耗：2,267.48kb] [文件加载：58]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=150UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcE11TXVBeS8%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nWmJaYlZvWGVHf0d5QnhFek53THdJfUhySmQy%7CVWldfS0QMAw2CSkVLg4gSTlXKEUCKQk2FikMWn4fYE4YTg%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AgkJZnBkQBy7HCUIEOwsKTtrmT9iMv2l; isg=AuzsO3CEmbbm8I2KUhNeoYryvcoUkJBPpg2v0UYsnBcXUYxbbrVg3-KhB66T',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:1.187880s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.456156s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.137322s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.006317s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.013486s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.007658s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.007824s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.010375s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.311306s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.085210s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.015652s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.004408s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.023314s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:40:29+08:00 ] 127.0.0.1 127.0.0.1 GET /i/asynSearch.htm?_ksTS=1493804429646_176&callback=jsonp177&mid=w-10795111360-0&wid=10795111360&path=/search.htm&search=y&viewType=list
+[ log ] taoke.com/i/asynSearch.htm?_ksTS=1493804429646_176&callback=jsonp177&mid=w-10795111360-0&wid=10795111360&path=/search.htm&search=y&viewType=list [运行时间：0.232928s][吞吐率：4.29req/s] [内存消耗：1,972.37kb] [文件加载：54]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'i',
+    1 => 'asynSearch.htm',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AgkJZnBkQBy7HCUIEOwsKTtrmT9iMv2l; isg=AuzsO3CEmbbm8I2KUhNeoYryvcoUkJBPpg2v0UYsnBcXUYxbbrVg3-KhB66T; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://taoke.com/index/test/tb1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/i/asynSearch_htm' => '',
+  '_ksTS' => '1493804429646_176',
+  'callback' => 'jsonp177',
+  'mid' => 'w-10795111360-0',
+  'wid' => '10795111360',
+  'path' => '/search.htm',
+  'search' => 'y',
+  'viewType' => 'list',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.152990s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.049812s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.082895s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.017212s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.011390s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.017764s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.004401s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.008483s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.006507s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.011931s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.005600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.009014s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.004036s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:40:31+08:00 ] 127.0.0.1 127.0.0.1 GET /i/vdata.htm?mockDate&isAudit&_ksTS=1493804429657_201&callback=jsonp202
+[ log ] taoke.com/i/vdata.htm?mockDate&isAudit&_ksTS=1493804429657_201&callback=jsonp202 [运行时间：0.348430s][吞吐率：2.87req/s] [内存消耗：1,971.88kb] [文件加载：54]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'i',
+    1 => 'vdata.htm',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AgkJZnBkQBy7HCUIEOwsKTtrmT9iMv2l; isg=AuzsO3CEmbbm8I2KUhNeoYryvcoUkJBPpg2v0UYsnBcXUYxbbrVg3-KhB66T; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://taoke.com/index/test/tb1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/i/vdata_htm' => '',
+  'mockDate' => '',
+  'isAudit' => '',
+  '_ksTS' => '1493804429657_201',
+  'callback' => 'jsonp202',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.227358s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.092391s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.178579s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.007959s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.013338s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.008394s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.005505s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.008712s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.007237s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.017370s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.033138s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.013277s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.006432s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:40:45+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：0.683386s][吞吐率：1.46req/s] [内存消耗：2,279.95kb] [文件加载：58]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=Al5e5I/wfy2ItbIpM5UjmGkULv6gHyKZ; isg=Aj8_wtyaWn84J15jZTI9uEWjzhPDEZPGmTyceNEM2-414F9i2fQjFr3yVAfk',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.133171s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.067148s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.079401s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.004644s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.013684s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.007328s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.004524s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.014572s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.008186s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.006893s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.007984s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.010700s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.011136s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:47:53+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：1.541544s][吞吐率：0.65req/s] [内存消耗：2,178.73kb] [文件加载：58]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.114484s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.158527s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.080539s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.004449s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.003860s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.004556s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.004323s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.003587s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.122306s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.009762s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.003262s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.005703s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.008437s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T17:52:54+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：1.544578s][吞吐率：0.65req/s] [内存消耗：2,292.75kb] [文件加载：58]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.220245s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.056074s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019288s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.156024s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.008902s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.010398s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.008452s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.021137s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.004162s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.004344s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.010086s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.003944s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.005936s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T18:03:03+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：5.424340s][吞吐率：0.18req/s] [内存消耗：2,220.21kb] [文件加载：63]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.049878s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.042018s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010730s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.005459s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.009303s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.003462s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.003085s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.009157s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.005435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.004091s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.008472s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.005389s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.004363s ]
+[ error ] [2]preg_match(): Unknown modifier 'd'[C:\WWW\taoke\lib\taobao\tbitemcollection.php:78]
+
+---------------------------------------------------------------
+[ 2017-05-03T18:03:29+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：1.277025s][吞吐率：0.78req/s] [内存消耗：2,220.23kb] [文件加载：63]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.052809s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.040251s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013224s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.006419s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.006159s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.006208s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.003192s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.003103s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.005724s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.008705s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.005750s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.003423s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.008005s ]
+[ error ] [2]preg_match(): Unknown modifier 'd'[C:\WWW\taoke\lib\taobao\tbitemcollection.php:78]
+
+---------------------------------------------------------------
+[ 2017-05-03T18:03:51+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：4.656679s][吞吐率：0.21req/s] [内存消耗：2,231.18kb] [文件加载：56]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.184135s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.589826s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.092057s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.006047s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.014407s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.004230s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.049971s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.032103s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.004824s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.112193s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.004841s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.420114s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.008841s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T18:04:24+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：1.277841s][吞吐率：0.78req/s] [内存消耗：2,231.20kb] [文件加载：56]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.128837s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.064253s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.077308s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.011734s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.007228s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.006854s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.008427s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.011549s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.005299s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.008553s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.005919s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.005842s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.021211s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T18:05:36+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：1.208988s][吞吐率：0.83req/s] [内存消耗：2,231.29kb] [文件加载：56]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.060627s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.049018s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.016025s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.005126s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.008354s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.004486s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.009709s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.005025s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.010342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.007278s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.004042s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.008426s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.008202s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T18:06:13+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：1.070375s][吞吐率：0.93req/s] [内存消耗：2,231.20kb] [文件加载：56]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.118146s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.047065s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.073513s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.003925s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.009577s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.007745s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.009909s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.003392s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.004468s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.009990s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.012081s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.004668s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.006608s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T18:06:39+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：1.229569s][吞吐率：0.81req/s] [内存消耗：2,556.79kb] [文件加载：56]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.049223s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.034184s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010572s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.011572s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.006841s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.004606s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.002778s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.005817s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.003058s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.003252s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.003177s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.007633s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.006409s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T18:07:35+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb1
+[ log ] taoke.com/index/test/tb1 [运行时间：1.028303s][吞吐率：0.97req/s] [内存消耗：2,231.09kb] [文件加载：56]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.058393s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.038147s ]
+[ info ] [ RUN ] app\index\controller\Test->tb1[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015050s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.007593s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.006499s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.009280s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.003643s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.008839s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.004666s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.004026s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.005394s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.006588s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.003278s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T18:09:52+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb2
+[ log ] taoke.com/index/test/tb2 [运行时间：0.211059s][吞吐率：4.74req/s] [内存消耗：2,225.27kb] [文件加载：55]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb2' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.134761s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.047968s ]
+[ info ] [ RUN ] app\index\controller\Test->tb2[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.077686s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.005778s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.016763s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.009490s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.006856s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.005930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.008002s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.006613s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.005309s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.009586s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T18:10:11+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb2
+[ log ] taoke.com/index/test/tb2 [运行时间：0.137943s][吞吐率：7.25req/s] [内存消耗：2,389.30kb] [文件加载：55]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb2' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.056176s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.046966s ]
+[ info ] [ RUN ] app\index\controller\Test->tb2[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019587s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.007743s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.009072s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.003764s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.003591s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.005806s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.004119s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.009484s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.006545s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.006119s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.009847s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T18:10:44+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb2
+[ log ] taoke.com/index/test/tb2 [运行时间：0.903181s][吞吐率：1.11req/s] [内存消耗：2,389.58kb] [文件加载：55]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb2' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.842672s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.031964s ]
+[ info ] [ RUN ] app\index\controller\Test->tb2[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.061590s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.006016s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.005350s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.447882s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.307360s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.006374s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.006107s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.003228s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.003844s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.004076s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.003758s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T18:12:03+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb2
+[ log ] taoke.com/index/test/tb2 [运行时间：0.177955s][吞吐率：5.62req/s] [内存消耗：2,569.25kb] [文件加载：55]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb2' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.071259s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.067850s ]
+[ info ] [ RUN ] app\index\controller\Test->tb2[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009630s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.011355s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.019228s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.010279s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.007985s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.006039s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.012647s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.007757s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.009402s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.013878s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.012253s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T18:13:58+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb2
+[ log ] taoke.com/index/test/tb2 [运行时间：2.647862s][吞吐率：0.38req/s] [内存消耗：2,226.20kb] [文件加载：55]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb2' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:2.529222s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.087404s ]
+[ info ] [ RUN ] app\index\controller\Test->tb2[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.147161s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:2.229064s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.099391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.035750s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.003699s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.023729s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.017620s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.004989s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.003460s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.003458s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.028334s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T18:14:05+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb2
+[ log ] taoke.com/index/test/tb2 [运行时间：3.429018s][吞吐率：0.29req/s] [内存消耗：2,226.20kb] [文件加载：55]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb2' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:1.585844s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:1.816574s ]
+[ info ] [ RUN ] app\index\controller\Test->tb2[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.164830s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.426440s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.458753s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.042635s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.476665s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.307517s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.909734s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.003789s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.003995s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.510327s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.074932s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T18:14:11+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb2
+[ log ] taoke.com/index/test/tb2 [运行时间：0.221303s][吞吐率：4.52req/s] [内存消耗：2,569.25kb] [文件加载：55]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb2' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.143799s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.042126s ]
+[ info ] [ RUN ] app\index\controller\Test->tb2[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.100652s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.005631s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.010020s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.007205s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.005213s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.005349s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.004138s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.008395s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.004895s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.010007s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.004009s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T18:19:12+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb2
+[ log ] taoke.com/index/test/tb2 [运行时间：0.197095s][吞吐率：5.07req/s] [内存消耗：2,226.27kb] [文件加载：55]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb2' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.127801s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.036875s ]
+[ info ] [ RUN ] app\index\controller\Test->tb2[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.070718s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.010136s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.011306s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.013771s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.004282s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.003870s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.004812s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.003610s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.004423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.005424s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.009740s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T18:21:51+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb2
+[ log ] taoke.com/index/test/tb2 [运行时间：0.222777s][吞吐率：4.49req/s] [内存消耗：2,561.92kb] [文件加载：55]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb2' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.132715s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.055474s ]
+[ info ] [ RUN ] app\index\controller\Test->tb2[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.076029s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.007754s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.013270s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.010186s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.010132s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.009487s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.004279s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.012329s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.004469s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.008209s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.010599s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T18:26:32+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb2
+[ log ] taoke.com/index/test/tb2 [运行时间：1.887019s][吞吐率：0.53req/s] [内存消耗：2,227.03kb] [文件加载：55]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb2' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.931927s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.915443s ]
+[ info ] [ RUN ] app\index\controller\Test->tb2[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.554249s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.047904s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.272824s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.027478s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.014570s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.586157s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.023559s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.030863s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.109467s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.058532s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.101276s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T18:27:43+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb2
+[ log ] taoke.com/index/test/tb2 [运行时间：0.209249s][吞吐率：4.78req/s] [内存消耗：2,226.68kb] [文件加载：55]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb2' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.123938s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.056510s ]
+[ info ] [ RUN ] app\index\controller\Test->tb2[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.075903s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.007461s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.007535s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.010062s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.004309s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.007113s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.015432s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.008250s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.004721s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.007458s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.008810s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T18:27:45+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb2
+[ log ] taoke.com/index/test/tb2 [运行时间：0.181627s][吞吐率：5.51req/s] [内存消耗：2,226.68kb] [文件加载：55]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb2' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.114192s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.038846s ]
+[ info ] [ RUN ] app\index\controller\Test->tb2[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.076584s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.006844s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.004085s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.006298s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.003695s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.007973s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.003793s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.006780s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.003068s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.008155s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.004262s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T18:27:57+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb2
+[ log ] taoke.com/index/test/tb2 [运行时间：0.519975s][吞吐率：1.92req/s] [内存消耗：2,358.86kb] [文件加载：55]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb2' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.159034s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.334318s ]
+[ info ] [ RUN ] app\index\controller\Test->tb2[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.114218s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.005797s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.004705s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.009056s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.007462s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.003576s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.006825s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.004505s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.004344s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.006579s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.303606s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T18:29:24+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb2
+[ log ] taoke.com/index/test/tb2 [运行时间：0.155133s][吞吐率：6.45req/s] [内存消耗：2,211.22kb] [文件加载：62]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb2' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.059608s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.035033s ]
+[ info ] [ RUN ] app\index\controller\Test->tb2[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.016308s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.005492s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.003970s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.004843s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.014230s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.005738s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.003597s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.005448s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.004444s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.006507s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.003494s ]
+[ error ] [2]preg_match_all(): Unknown modifier 'd'[C:\WWW\taoke\application\index\controller\Test.php:16]
+
+---------------------------------------------------------------
+[ 2017-05-03T18:29:42+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb2
+[ log ] taoke.com/index/test/tb2 [运行时间：0.149930s][吞吐率：6.67req/s] [内存消耗：2,347.73kb] [文件加载：55]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb2' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.073319s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.043668s ]
+[ info ] [ RUN ] app\index\controller\Test->tb2[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019240s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.008145s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.006711s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.005727s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.017029s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.006572s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.006992s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.006533s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.006681s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.004658s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.006194s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T18:29:53+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb2
+[ log ] taoke.com/index/test/tb2 [运行时间：0.147138s][吞吐率：6.80req/s] [内存消耗：2,226.97kb] [文件加载：55]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb2' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.071962s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.044791s ]
+[ info ] [ RUN ] app\index\controller\Test->tb2[ C:\WWW\taoke\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011832s ] mysql:dbname=taoke;host=192.168.0.146;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_config` [ RunTime:0.007763s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `tk_admin_config` [ RunTime:0.015431s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_module` [ RunTime:0.004672s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `tk_admin_module` WHERE  `config` <> '' [ RunTime:0.017687s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook` [ RunTime:0.007639s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_hook` WHERE  `status` = 1 [ RunTime:0.004959s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_plugin` [ RunTime:0.006159s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `tk_admin_plugin` WHERE  `status` = 1 [ RunTime:0.008913s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tk_admin_hook_plugin` [ RunTime:0.005572s ]
+[ sql ] [ SQL ] SELECT * FROM `tk_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.004877s ]
+
+---------------------------------------------------------------
+[ 2017-05-03T19:54:37+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb2
+[ log ] taoke.com/index/test/tb2 [运行时间：21.048068s][吞吐率：0.05req/s] [内存消耗：1,758.27kb] [文件加载：48]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb2' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+[C:\WWW\taoke\thinkphp\library\think\db\Connection.php:282]
+
+---------------------------------------------------------------
+[ 2017-05-03T19:55:26+08:00 ] 127.0.0.1 127.0.0.1 GET /index/test/tb2
+[ log ] taoke.com/index/test/tb2 [运行时间：21.045726s][吞吐率：0.05req/s] [内存消耗：1,758.18kb] [文件加载：48]
+[ info ] [ LANG ] C:\WWW\taoke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'tb2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_uab_collina=149380404419634873697252; pnm_cku822=194UW5TcyMNYQwiAiwQRHhBfEF8QXtHcklnMWc%3D%7CUm5Ockt%2FQXRJcEl2Q3dOdyE%3D%7CU2xMHDJ7G2AHYg8hAS8XLQMjDVEwVjpdI1l3IXc%3D%7CVGhXd1llXGhWY15nXmFUYFlgV2pIdU92SH1IcU57QXlEeUV5Qn5QBg%3D%3D%7CVWldfS0SMg4xCCgUIAAuUw9kDUoMJwc4GCcCVARnW39UNRtNGw%3D%3D%7CVmhIGCUFOBgkGyAZOQYzCioWKRwhATQJNBQoFyIfPwo3ClwK%7CV25Tbk5zU2xMcEl1VWtTaUlwJg%3D%3D; cna=sqBrESSh0gQCAavUcgL74oNS; _umdata=C234BF9D3AFA6FE74578F39EF56D0F91C4240992627E235196ED77F49CC3D1DD037F40523D871712CD43AD3E795C914C81731CFDF0DE5D05EE66D67E801142E5; l=AklJpkw5gFx73GXIUKzsaXp/2X-jSj3I; isg=Ak9PkixqSk-IZU4z9YItSNXT3uNTQaOWCYysSGFcN77FMG8yaUQz5k1gRNd0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'taoke.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/test/tb2' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+[C:\WWW\taoke\thinkphp\library\think\db\Connection.php:282]
+
+---------------------------------------------------------------

@@ -1,0 +1,181 @@
+2017-05-04 15:39:07	exception 'think\exception\ErrorException' with message 'Class 'app\index\controller\Db' not found' in C:\WWW\taoke\application\index\controller\Test.php:93
+Stack trace:
+#0 [internal function]: think\Error::appShutdown()
+#1 {main}
+
+2017-05-04 15:39:10	exception 'think\exception\ErrorException' with message 'Undefined offset: 0' in C:\WWW\taoke\application\index\controller\Test.php:40
+Stack trace:
+#0 C:\WWW\taoke\application\index\controller\Test.php(40): think\Error::appError(8, 'Undefined offse...', 'C:\\WWW\\taoke\\ap...', 40, Array)
+#1 [internal function]: app\index\controller\Test->tb2()
+#2 C:\WWW\taoke\thinkphp\library\think\App.php(234): ReflectionMethod->invokeArgs(Object(app\index\controller\Test), Array)
+#3 C:\WWW\taoke\thinkphp\library\think\App.php(407): think\App::invokeMethod(Array, Array)
+#4 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#5 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#6 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#7 {main}
+
+2017-05-04 15:39:45	exception 'think\exception\ErrorException' with message 'Undefined offset: 0' in C:\WWW\taoke\application\index\controller\Test.php:41
+Stack trace:
+#0 C:\WWW\taoke\application\index\controller\Test.php(41): think\Error::appError(8, 'Undefined offse...', 'C:\\WWW\\taoke\\ap...', 41, Array)
+#1 [internal function]: app\index\controller\Test->tb2()
+#2 C:\WWW\taoke\thinkphp\library\think\App.php(234): ReflectionMethod->invokeArgs(Object(app\index\controller\Test), Array)
+#3 C:\WWW\taoke\thinkphp\library\think\App.php(407): think\App::invokeMethod(Array, Array)
+#4 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#5 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#6 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#7 {main}
+
+2017-05-04 15:40:34	exception 'think\exception\ErrorException' with message 'Undefined offset: 0' in C:\WWW\taoke\application\index\controller\Test.php:42
+Stack trace:
+#0 C:\WWW\taoke\application\index\controller\Test.php(42): think\Error::appError(8, 'Undefined offse...', 'C:\\WWW\\taoke\\ap...', 42, Array)
+#1 [internal function]: app\index\controller\Test->tb2()
+#2 C:\WWW\taoke\thinkphp\library\think\App.php(234): ReflectionMethod->invokeArgs(Object(app\index\controller\Test), Array)
+#3 C:\WWW\taoke\thinkphp\library\think\App.php(407): think\App::invokeMethod(Array, Array)
+#4 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#5 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#6 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#7 {main}
+
+2017-05-04 15:41:25	exception 'think\exception\ErrorException' with message 'Undefined offset: 0' in C:\WWW\taoke\application\index\controller\Test.php:43
+Stack trace:
+#0 C:\WWW\taoke\application\index\controller\Test.php(43): think\Error::appError(8, 'Undefined offse...', 'C:\\WWW\\taoke\\ap...', 43, Array)
+#1 [internal function]: app\index\controller\Test->tb2()
+#2 C:\WWW\taoke\thinkphp\library\think\App.php(234): ReflectionMethod->invokeArgs(Object(app\index\controller\Test), Array)
+#3 C:\WWW\taoke\thinkphp\library\think\App.php(407): think\App::invokeMethod(Array, Array)
+#4 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#5 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#6 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#7 {main}
+
+2017-05-04 15:41:39	exception 'think\exception\ErrorException' with message 'Undefined offset: 0' in C:\WWW\taoke\application\index\controller\Test.php:44
+Stack trace:
+#0 C:\WWW\taoke\application\index\controller\Test.php(44): think\Error::appError(8, 'Undefined offse...', 'C:\\WWW\\taoke\\ap...', 44, Array)
+#1 [internal function]: app\index\controller\Test->tb2()
+#2 C:\WWW\taoke\thinkphp\library\think\App.php(234): ReflectionMethod->invokeArgs(Object(app\index\controller\Test), Array)
+#3 C:\WWW\taoke\thinkphp\library\think\App.php(407): think\App::invokeMethod(Array, Array)
+#4 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#5 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#6 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#7 {main}
+
+2017-05-04 15:43:23	exception 'think\exception\ErrorException' with message 'Undefined offset: 3' in C:\WWW\taoke\application\index\controller\Test.php:43
+Stack trace:
+#0 C:\WWW\taoke\application\index\controller\Test.php(43): think\Error::appError(8, 'Undefined offse...', 'C:\\WWW\\taoke\\ap...', 43, Array)
+#1 [internal function]: app\index\controller\Test->tb2()
+#2 C:\WWW\taoke\thinkphp\library\think\App.php(234): ReflectionMethod->invokeArgs(Object(app\index\controller\Test), Array)
+#3 C:\WWW\taoke\thinkphp\library\think\App.php(407): think\App::invokeMethod(Array, Array)
+#4 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#5 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#6 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#7 {main}
+
+2017-05-04 15:44:27	exception 'think\exception\ErrorException' with message 'Undefined variable: res' in C:\WWW\taoke\application\index\controller\Test.php:213
+Stack trace:
+#0 C:\WWW\taoke\application\index\controller\Test.php(213): think\Error::appError(8, 'Undefined varia...', 'C:\\WWW\\taoke\\ap...', 213, Array)
+#1 [internal function]: app\index\controller\Test->test()
+#2 C:\WWW\taoke\thinkphp\library\think\App.php(234): ReflectionMethod->invokeArgs(Object(app\index\controller\Test), Array)
+#3 C:\WWW\taoke\thinkphp\library\think\App.php(407): think\App::invokeMethod(Array, Array)
+#4 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#5 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#6 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#7 {main}
+
+2017-05-04 15:46:21	exception 'think\exception\ErrorException' with message 'Undefined offset: 3' in C:\WWW\taoke\application\index\controller\Test.php:38
+Stack trace:
+#0 C:\WWW\taoke\application\index\controller\Test.php(38): think\Error::appError(8, 'Undefined offse...', 'C:\\WWW\\taoke\\ap...', 38, Array)
+#1 [internal function]: app\index\controller\Test->test()
+#2 C:\WWW\taoke\thinkphp\library\think\App.php(234): ReflectionMethod->invokeArgs(Object(app\index\controller\Test), Array)
+#3 C:\WWW\taoke\thinkphp\library\think\App.php(407): think\App::invokeMethod(Array, Array)
+#4 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#5 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#6 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#7 {main}
+
+2017-05-04 15:48:10	exception 'think\exception\ErrorException' with message 'Undefined offset: 3' in C:\WWW\taoke\application\index\controller\Test.php:38
+Stack trace:
+#0 C:\WWW\taoke\application\index\controller\Test.php(38): think\Error::appError(8, 'Undefined offse...', 'C:\\WWW\\taoke\\ap...', 38, Array)
+#1 [internal function]: app\index\controller\Test->test()
+#2 C:\WWW\taoke\thinkphp\library\think\App.php(234): ReflectionMethod->invokeArgs(Object(app\index\controller\Test), Array)
+#3 C:\WWW\taoke\thinkphp\library\think\App.php(407): think\App::invokeMethod(Array, Array)
+#4 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#5 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#6 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#7 {main}
+
+2017-05-04 16:47:33	exception 'think\exception\ErrorException' with message 'Undefined offset: 0' in C:\WWW\taoke\lib\taobao\tbitemcollection.php:115
+Stack trace:
+#0 C:\WWW\taoke\lib\taobao\tbitemcollection.php(115): think\Error::appError(8, 'Undefined offse...', 'C:\\WWW\\taoke\\li...', 115, Array)
+#1 C:\WWW\taoke\application\index\controller\Test.php(85): tbitemcollection->step2('10795111360')
+#2 [internal function]: app\index\controller\Test->tb1()
+#3 C:\WWW\taoke\thinkphp\library\think\App.php(234): ReflectionMethod->invokeArgs(Object(app\index\controller\Test), Array)
+#4 C:\WWW\taoke\thinkphp\library\think\App.php(407): think\App::invokeMethod(Array, Array)
+#5 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#6 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#7 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#8 {main}
+
+2017-05-04 16:53:18	exception 'think\exception\ErrorException' with message 'Undefined offset: 3' in C:\WWW\taoke\lib\taobao\tbitemcollection.php:116
+Stack trace:
+#0 C:\WWW\taoke\lib\taobao\tbitemcollection.php(116): think\Error::appError(8, 'Undefined offse...', 'C:\\WWW\\taoke\\li...', 116, Array)
+#1 C:\WWW\taoke\application\index\controller\Test.php(86): tbitemcollection->step2('10795111360')
+#2 [internal function]: app\index\controller\Test->tb1()
+#3 C:\WWW\taoke\thinkphp\library\think\App.php(234): ReflectionMethod->invokeArgs(Object(app\index\controller\Test), Array)
+#4 C:\WWW\taoke\thinkphp\library\think\App.php(407): think\App::invokeMethod(Array, Array)
+#5 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#6 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#7 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#8 {main}
+
+2017-05-04 17:04:48	exception 'think\exception\ErrorException' with message 'Undefined index: pic' in C:\WWW\taoke\application\index\controller\Test.php:104
+Stack trace:
+#0 C:\WWW\taoke\application\index\controller\Test.php(104): think\Error::appError(8, 'Undefined index...', 'C:\\WWW\\taoke\\ap...', 104, Array)
+#1 [internal function]: app\index\controller\Test->tb1()
+#2 C:\WWW\taoke\thinkphp\library\think\App.php(234): ReflectionMethod->invokeArgs(Object(app\index\controller\Test), Array)
+#3 C:\WWW\taoke\thinkphp\library\think\App.php(407): think\App::invokeMethod(Array, Array)
+#4 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#5 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#6 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#7 {main}
+
+2017-05-04 17:05:40	exception 'think\exception\PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2147483647' for key 'PRIMARY'' in C:\WWW\taoke\thinkphp\library\think\db\Connection.php:405
+Stack trace:
+#0 [internal function]: think\db\Connection->execute('INSERT INTO tk_...')
+#1 C:\WWW\taoke\thinkphp\library\think\Db.php(151): call_user_func_array(Array, Array)
+#2 C:\WWW\taoke\application\index\controller\Test.php(111): think\Db::__callStatic('execute', Array)
+#3 C:\WWW\taoke\application\index\controller\Test.php(111): think\Db::execute('INSERT INTO tk_...')
+#4 [internal function]: app\index\controller\Test->tb1()
+#5 C:\WWW\taoke\thinkphp\library\think\App.php(234): ReflectionMethod->invokeArgs(Object(app\index\controller\Test), Array)
+#6 C:\WWW\taoke\thinkphp\library\think\App.php(407): think\App::invokeMethod(Array, Array)
+#7 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#8 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#9 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#10 {main}
+
+2017-05-04 17:08:52	exception 'think\exception\PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2147483647' for key 'PRIMARY'' in C:\WWW\taoke\thinkphp\library\think\db\Connection.php:405
+Stack trace:
+#0 [internal function]: think\db\Connection->execute('INSERT INTO tk_...')
+#1 C:\WWW\taoke\thinkphp\library\think\Db.php(151): call_user_func_array(Array, Array)
+#2 C:\WWW\taoke\application\index\controller\Test.php(112): think\Db::__callStatic('execute', Array)
+#3 C:\WWW\taoke\application\index\controller\Test.php(112): think\Db::execute('INSERT INTO tk_...')
+#4 [internal function]: app\index\controller\Test->tb1()
+#5 C:\WWW\taoke\thinkphp\library\think\App.php(234): ReflectionMethod->invokeArgs(Object(app\index\controller\Test), Array)
+#6 C:\WWW\taoke\thinkphp\library\think\App.php(407): think\App::invokeMethod(Array, Array)
+#7 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#8 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#9 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#10 {main}
+
+2017-05-04 17:09:55	exception 'think\exception\PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2147483647' for key 'PRIMARY'' in C:\WWW\taoke\thinkphp\library\think\db\Connection.php:405
+Stack trace:
+#0 [internal function]: think\db\Connection->execute('INSERT INTO tk_...')
+#1 C:\WWW\taoke\thinkphp\library\think\Db.php(151): call_user_func_array(Array, Array)
+#2 C:\WWW\taoke\application\index\controller\Test.php(113): think\Db::__callStatic('execute', Array)
+#3 C:\WWW\taoke\application\index\controller\Test.php(113): think\Db::execute('INSERT INTO tk_...')
+#4 [internal function]: app\index\controller\Test->tb1()
+#5 C:\WWW\taoke\thinkphp\library\think\App.php(234): ReflectionMethod->invokeArgs(Object(app\index\controller\Test), Array)
+#6 C:\WWW\taoke\thinkphp\library\think\App.php(407): think\App::invokeMethod(Array, Array)
+#7 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#8 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#9 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#10 {main}
+

@@ -1,0 +1,310 @@
+<!doctype html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>联盟商品搜索</title>
+<link rel="stylesheet" type="text/css" href="http://365tp.hr999999.com/View/admin/css/alapi/index.css">
+<script language="javascript" src="http://365tp.hr999999.com/View/admin/js/comm/jquery.min.js"></script>
+<script type="text/javascript" src="http://365tp.hr999999.com/View/admin/js/comm/comm.js"></script>
+<script type="text/javascript" src="http://365tp.hr999999.com/View/admin/js/comm/jquery.nicescroll.js"></script>
+<script src="http://365tp.hr999999.com/View/admin/js/comm/getcate.js"></script>
+<script src="http://365tp.hr999999.com/View/admin/js/comm/Cookie.js"></script>
+<script>
+$(document).ready(function(e) {
+	/*$("a").each(function(index, element) {
+        if($(this).attr("value")==null)return;
+		if($(this).attr("value")==$(this).attr("val"))$(this).addClass("a1on");
+    });*/
+	$("select").each(function(index, element) {
+        if($(this).attr("val")){
+			$(this).find("option[value='"+$(this).attr("val")+"']").attr("selected",true);	
+		}
+    });
+	$(".z.-main .m-p1 .a1").click(function(){
+		$("#b2c").val($(this).attr('value'));goto();
+		return false;	
+	});
+	$("*").each(function(index, element) {
+        if($(this).attr('url')==null)return;
+		$(this).click(function(){window.location=$(this).attr("url");return false;});
+    });
+	if($(".z.-main .con > .l1").length>0)$("#m-p1-3").show();
+	$("#formMain").submit(function(){
+		goto();return false;	
+	});
+	$(".z.-main .con > .l1 .d1 > .xq").click(function(){
+		var tmp=Cookies.get("alids");
+		if(tmp==null)tmp='';
+		if(tmp.indexOf("_"+$(this).attr("fnuo_id"))>=0){
+			tmp=tmp.replace("_"+$(this).attr("fnuo_id"),'');
+			$(this).html("选取").removeClass("on");
+		}
+		else{
+			tmp+="_"+$(this).attr("fnuo_id");
+			$(this).html("已选取").addClass("on");
+		}
+		Cookies.set("alids",tmp);
+		return false;	
+	});
+	var tmpcookie=Cookies.get("alids");
+	if(tmpcookie==null)tmpcookie='';
+	$(".z.-main .con > .l1 .d1 > .xq").each(function(index, element) {
+        if(tmpcookie.indexOf("_"+$(this).attr("fnuo_id"))>=0)$(this).addClass("on").html("已选取");
+    });
+	$("#save").click(function(){
+		var json={};
+		json.title=$("#rule_title").val();
+    json.class_name=$("#rule_class_name").val();
+    json.num=$("#rule_num").val();
+    json.keywords=$("#rule_keywords").val();
+		if(json.title==''){
+			alert("请填写规则名字");
+			return false;
+		}
+    if(json.keywords==''){
+      alert("请填写采集关键词");
+      return false;
+    }
+		$.post("{:url('taoke/taobaolmrule/add')}",json,function(data){
+			alert(data.error);
+		},"json");
+	});
+	$("#cj").click(function(){
+		
+	});
+	$("#cj2").click(function(){
+		
+	});
+	$("body").attr("style","display:block;");
+});
+function getset(){
+	var url="";
+	$(".inpget").each(function(index, element) {
+		if($(this).val()==''||$(this).val()==null)return;
+		url+="&"+$(this).attr("name")+"="+$(this).val();
+	});
+	return url;
+}	
+function goto(){
+	var url=window.location.href;
+	url=url.split("?");url=url[0]+"?toPage=1"+getset();
+	window.location=url;
+}
+</script>
+</head>
+<body style="display:none;">
+<form class="z -main" method="get" action="{:url('taoke/taobaolm/index')}" id="formMain">
+  <div class="sea">
+    <div class="h">
+      <input type="text" class="t1 inpget" placeholder="搜你想要的~" value="{$q}" id="rule_keywords" name="q">
+      <input type="submit" value="搜索" class="sub1">
+    </div>
+  </div>
+  <div class="m-p1">
+    <h1>范围</h1>
+    <a href="javascript:void(0)" value="" val="" class="a1 tt{php}if($b2c==='')echo ' a1on';{/php}">所有宝贝</a>
+    <a href="javascript:void(0)" value="0" val="" class="a1 tt{php}if($b2c==='0')echo ' a1on';{/php}">淘宝</a>
+    <a href="javascript:void(0)" value="1" val="" class="a1 tt{php}if($b2c==='1')echo ' a1on';{/php}">天猫</a>
+    <input type="hidden" id="b2c" class="inpget" name="b2c" value="{$b2c}">
+    </div>
+  <div class="m-p1">
+    <h1>查询</h1>
+    <span>收入比率</span>
+    <input type="text" class="t2 inpget" name="startTkRate"  value="{$startTkRate}"><span>-</span>
+    <input type="text" class="t2 inpget" name="endTkRate"  value="{$endTkRate}">
+    <span>%</span>
+    
+    <span style="margin-left:10px;">价格</span>
+    <input type="text" class="t2 inpget" name="start_price" value="{$start_price}">
+    <span>-</span>
+    <input type="text" class="t2 inpget" name="end_price" value="{$end_price}" style="width:55px;">
+    
+    <span style="margin-left:10px;">聚划算</span>
+    <select class="inpget" name="jhs" val="{$jhs}">
+      <option value="">默认</option>
+      <option value="1">是</option>
+    </select>
+    
+    <span style="margin-left:10px;">有优惠券</span>
+    <select class="inpget" name="dpyhq" val="{$dpyhq}">
+      <option value="">默认</option>
+      <option value="1">是</option>
+    </select>
+    
+    <span style="margin-left:10px;">定向计划</span>
+    <select class="inpget" name="dxjh" val="{$dxjh}">
+      <option value="">默认</option>
+      <option value="1">是</option>
+    </select>
+    
+    
+    
+    <span style="margin-left:10px;">牛皮癣程度</span>
+    <select class="inpget" name="npxType" val="{$npxType}">
+      <option value="">默认</option>
+      <option value="1">无</option>
+      <option value="2">轻微</option>
+    </select>
+    <span style="margin-left:10px;">图片质量</span>
+    <select class="inpget" name="picQuality" val="{$picQuality}">
+      <option value="">默认</option>
+      <option value="1">中</option>
+      <option value="2">高</option>
+    </select>
+  </div>
+  <div class="m-p1">
+    <h1 style="padding-right:22px;">&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+   
+    
+    <span style="margin-left:10px;">类型</span>
+    <select class="inpget" name="typeTag" val="{$typeTag}">
+      <option value="">所有</option>
+      <option value="qqg">全球购</option>
+      <option value="zgzz">中国制造</option>
+    </select>
+    
+    <span style="margin-left:10px;">金牌店铺</span>
+    <select class="inpget" name="jpmj" val="{$jpmj}">
+      <option value="">默认</option>
+      <option value="1">是</option>
+    </select>
+    
+    <span style="margin-left:10px;">消费者保障</span>
+    <select class="inpget" name="xfzbz" val="{$xfzbz}">
+      <option value="">默认</option>
+      <option value="1">是</option>
+    </select>
+    
+    <span style="margin-left:10px;">好评率高于平均行业</span>
+    <select class="inpget" name="hGoodRate" val="{$hGoodRate}">
+      <option value="">默认</option>
+      <option value="1">是</option>
+    </select> 
+    
+    
+   <span style="margin-left:10px;">采集数量</span>
+    <select name="rule_num" val="{$rule_num}" id="rule_num" class="inpget">
+      <option value="100" >100</option>
+      <option value="200" >200</option>
+      <option value="300" >300</option>
+      <option value="400" >400</option>
+      <option value="500" >500</option>
+      <option value="600" >600</option>
+      <option value="700" >700</option>
+      <option value="800" >800</option>
+      <option value="900" >900</option>
+      <option value="1000" >1000</option>
+    </select>
+    
+    <span style="margin-left:10px;">排序</span>
+    <select class="inpget" name="sortType" val="{$sortType}">
+      <option value="">默认</option>
+      <option value="9">销量从高到低</option>
+      <option value="3">价格从高到低</option>
+      <option value="4">价格从低到高</option>
+      <option value="1">收入比率从高到低</option>
+      <option value="5">月推广量从高到低</option>
+      <option value="7">月子出佣金从高到低</option>
+      
+    </select>
+    <input type="submit" value="确定" class="sub1">
+   </div>
+  
+  <div class="m-p1" style="padding-bottom:5px; display:none;" id="m-p1-3">
+    <h1>采集</h1>
+
+    <select name="channel" value="{$channel}"  style="margin-left:0px;">
+      <option value="">不限</option>
+      <option value="qqhd">高佣活动</option>
+      <option value="9k9">超值9块9</option>
+    </select>
+
+    <select name="rule_class_name" id="rule_class_name" value="{$rule_class_name}"  style="margin-left: 5px;">
+      {volist name="select_class" id="class"}
+      <option value="{$key}">{$class}</option>
+      {/volist}
+    </select>
+
+
+
+    <input type="text" id="rule_title" value="{$rule_title}" placeholder="规则的名字" style="width: 120px;margin-left: 5px;padding: 0px 5px;margin-top: 2px;">
+
+    <input type="button" value="保存当前采集规则" class="sub1" id="save">
+    <input type="button" value="查看规则列表" class="sub1" url="{:url('taoke/taobaolmrule/index')}">
+    <input type="button" value="采集选中的商品" class="sub1" id="cj2">
+    <input type="button" value="一键采集商品" class="sub1" id="cj">
+    
+    <!--<input type="button" value="只采集包邮的商品" class="sub1" id="cj2">-->
+    
+  </div>
+  <div class="con">
+    <div class="l1" style="background-color:#eee;"> <span class="sp1">商品信息</span>
+    <!--<span class="sp2">邮费</span>-->
+    <span class="sp2">商城</span> <span class="sp2">原价</span> <span class="sp2">现价</span> <span class="sp2">返利比例</span> </div>
+    
+      {volist name="data" id="item"}
+      <div class="l1 sp">
+        <div class="tdj" style="display:none;"></div>
+        <div class="d1">
+        <em class="xq" fnuo_id="{$item.auctionId}">选取</em>
+        <img class="goodslist"  src="{$item.pictUrl}" title="{$item.title}"> <a href="http://item.taobao.com/item.htm?id=549798887878" target="_blank" class="a1" title="{$item.title}">{$item.title}</a> <a href="{$item.auctionUrl}" target="_blank" class="a2" title="">{$item.shopTitle}</a> </div>
+        
+        <!--<div class="d2" t="0"></div>邮费-->
+        <div class="d2" t="2">>{$item.userType}</div><!--商城-->
+        <div class="d2">￥{$item.reservePrice}</div> <!--原价-->
+        <div class="d2" t="1">{$item.zkPrice}</div><!--现价-->
+        <div class="d2" t="3">{$item.tkRate}</div><!--折扣--> 
+        
+      </div>
+      {/volist}
+    
+ 
+    
+  
+    
+    
+  </div>
+</form>
+
+
+<!--z-main-->
+
+<form method="post" class="z -fenye" action="http://365tp.hr999999.com/admin/?mod=&act=atbapi&ctrl=atb" id="cjcon">
+<div class="h">
+
+{php}
+
+for($i=1;$i<=$rule_num/100;$i++){
+  $page_str='<a href="'.$self_url.'?toPage='.$i.'" class="a1"';
+  if($toPage==$i) $page_str.=' style="background:#f00000;" href="javascript:;"';
+  $page_str.='>'.$i.'</a>';
+  echo $page_str;
+}
+
+
+{/php}
+
+
+
+</div>
+</form>
+<script>
+
+$(document).ready(function(e) {
+	return false;
+    document.onkeydown=function(e){
+			e=e?e:window.event;
+			switch(e.keyCode){
+				case 116:
+				$("#f1").submit();
+				return false;
+				break;	
+			}
+	}
+});
+
+</script>
+
+</body>
+</html>

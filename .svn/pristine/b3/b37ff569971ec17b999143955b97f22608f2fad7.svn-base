@@ -1,0 +1,249 @@
+2017-05-03 15:37:24	exception 'think\exception\HttpException' with message 'module not exists:test' in C:\WWW\taoke\thinkphp\library\think\App.php:358
+Stack trace:
+#0 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#1 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#2 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#3 {main}
+
+2017-05-03 15:37:25	exception 'think\exception\HttpException' with message 'module not exists:favicon.ico' in C:\WWW\taoke\thinkphp\library\think\App.php:358
+Stack trace:
+#0 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#1 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#2 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#3 {main}
+
+2017-05-03 16:04:15	exception 'think\exception\PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0' at line 1' in C:\WWW\taoke\thinkphp\library\think\db\Connection.php:405
+Stack trace:
+#0 C:\WWW\taoke\thinkphp\library\think\db\Query.php(205): think\db\Connection->execute(0, Array)
+#1 C:\WWW\taoke\thinkphp\library\think\db\Query.php(1757): think\db\Query->execute(0, Array)
+#2 C:\WWW\taoke\application\index\controller\Test.php(39): think\db\Query->insert(Array)
+#3 [internal function]: app\index\controller\Test->tb()
+#4 C:\WWW\taoke\thinkphp\library\think\App.php(234): ReflectionMethod->invokeArgs(Object(app\index\controller\Test), Array)
+#5 C:\WWW\taoke\thinkphp\library\think\App.php(407): think\App::invokeMethod(Array, Array)
+#6 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#7 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#8 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#9 {main}
+
+2017-05-03 16:08:49	exception 'think\exception\PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: mixed named and positional parameters' in C:\WWW\taoke\thinkphp\library\think\db\Connection.php:405
+Stack trace:
+#0 C:\WWW\taoke\thinkphp\library\think\db\Query.php(205): think\db\Connection->execute('UPDATE `tk_admi...', Array)
+#1 C:\WWW\taoke\thinkphp\library\think\db\Query.php(1889): think\db\Query->execute('UPDATE `tk_admi...', Array)
+#2 C:\WWW\taoke\application\index\controller\Test.php(43): think\db\Query->update(Array)
+#3 [internal function]: app\index\controller\Test->tb()
+#4 C:\WWW\taoke\thinkphp\library\think\App.php(234): ReflectionMethod->invokeArgs(Object(app\index\controller\Test), Array)
+#5 C:\WWW\taoke\thinkphp\library\think\App.php(407): think\App::invokeMethod(Array, Array)
+#6 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#7 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#8 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#9 {main}
+
+2017-05-03 16:09:17	exception 'think\exception\PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: mixed named and positional parameters' in C:\WWW\taoke\thinkphp\library\think\db\Connection.php:405
+Stack trace:
+#0 C:\WWW\taoke\thinkphp\library\think\db\Query.php(205): think\db\Connection->execute('UPDATE `tk_admi...', Array)
+#1 C:\WWW\taoke\thinkphp\library\think\db\Query.php(1889): think\db\Query->execute('UPDATE `tk_admi...', Array)
+#2 C:\WWW\taoke\application\index\controller\Test.php(43): think\db\Query->update(Array)
+#3 [internal function]: app\index\controller\Test->tb()
+#4 C:\WWW\taoke\thinkphp\library\think\App.php(234): ReflectionMethod->invokeArgs(Object(app\index\controller\Test), Array)
+#5 C:\WWW\taoke\thinkphp\library\think\App.php(407): think\App::invokeMethod(Array, Array)
+#6 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#7 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#8 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#9 {main}
+
+2017-05-03 16:09:24	exception 'think\exception\ErrorException' with message 'Undefined offset: 1' in C:\WWW\taoke\thinkphp\library\think\db\Builder.php:277
+Stack trace:
+#0 C:\WWW\taoke\thinkphp\library\think\db\Builder.php(277): think\Error::appError(8, 'Undefined offse...', 'C:\\WWW\\taoke\\th...', 277, Array)
+#1 C:\WWW\taoke\thinkphp\library\think\db\Builder.php(258): think\db\Builder->parseWhereItem('sid', Array, 'AND', Array, Array)
+#2 C:\WWW\taoke\thinkphp\library\think\db\Builder.php(208): think\db\Builder->buildWhere(Array, Array)
+#3 C:\WWW\taoke\thinkphp\library\think\db\Builder.php(733): think\db\Builder->parseWhere(Array, Array)
+#4 C:\WWW\taoke\thinkphp\library\think\db\Query.php(1876): think\db\Builder->update(Array, Array)
+#5 C:\WWW\taoke\application\index\controller\Test.php(43): think\db\Query->update(Array)
+#6 [internal function]: app\index\controller\Test->tb()
+#7 C:\WWW\taoke\thinkphp\library\think\App.php(234): ReflectionMethod->invokeArgs(Object(app\index\controller\Test), Array)
+#8 C:\WWW\taoke\thinkphp\library\think\App.php(407): think\App::invokeMethod(Array, Array)
+#9 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#10 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#11 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#12 {main}
+
+2017-05-03 16:25:32	exception 'think\exception\ErrorException' with message 'Undefined offset: 1' in C:\WWW\taoke\application\index\controller\Test.php:60
+Stack trace:
+#0 C:\WWW\taoke\application\index\controller\Test.php(60): think\Error::appError(8, 'Undefined offse...', 'C:\\WWW\\taoke\\ap...', 60, Array)
+#1 [internal function]: app\index\controller\Test->tb()
+#2 C:\WWW\taoke\thinkphp\library\think\App.php(234): ReflectionMethod->invokeArgs(Object(app\index\controller\Test), Array)
+#3 C:\WWW\taoke\thinkphp\library\think\App.php(407): think\App::invokeMethod(Array, Array)
+#4 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#5 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#6 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#7 {main}
+
+2017-05-03 16:37:41	exception 'think\exception\ErrorException' with message 'explode() expects parameter 2 to be string, array given' in C:\WWW\taoke\application\index\controller\Test.php:76
+Stack trace:
+#0 [internal function]: think\Error::appError(2, 'explode() expec...', 'C:\\WWW\\taoke\\ap...', 76, Array)
+#1 C:\WWW\taoke\application\index\controller\Test.php(76): explode(',', Array)
+#2 [internal function]: app\index\controller\Test->tb()
+#3 C:\WWW\taoke\thinkphp\library\think\App.php(234): ReflectionMethod->invokeArgs(Object(app\index\controller\Test), Array)
+#4 C:\WWW\taoke\thinkphp\library\think\App.php(407): think\App::invokeMethod(Array, Array)
+#5 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#6 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#7 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#8 {main}
+
+2017-05-03 16:38:44	exception 'think\exception\PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'taoke.shop_category' doesn't exist' in C:\WWW\taoke\thinkphp\library\think\db\Connection.php:405
+Stack trace:
+#0 [internal function]: think\db\Connection->execute('INSERT INTO sho...')
+#1 C:\WWW\taoke\thinkphp\library\think\Db.php(151): call_user_func_array(Array, Array)
+#2 C:\WWW\taoke\application\index\controller\Test.php(79): think\Db::__callStatic('execute', Array)
+#3 C:\WWW\taoke\application\index\controller\Test.php(79): think\Db::execute('INSERT INTO sho...')
+#4 [internal function]: app\index\controller\Test->tb()
+#5 C:\WWW\taoke\thinkphp\library\think\App.php(234): ReflectionMethod->invokeArgs(Object(app\index\controller\Test), Array)
+#6 C:\WWW\taoke\thinkphp\library\think\App.php(407): think\App::invokeMethod(Array, Array)
+#7 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#8 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#9 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#10 {main}
+
+2017-05-03 16:40:14	exception 'think\exception\ErrorException' with message 'Array to string conversion' in C:\WWW\taoke\application\index\controller\Test.php:68
+Stack trace:
+#0 C:\WWW\taoke\application\index\controller\Test.php(68): think\Error::appError(8, 'Array to string...', 'C:\\WWW\\taoke\\ap...', 68, Array)
+#1 [internal function]: app\index\controller\Test->tb()
+#2 C:\WWW\taoke\thinkphp\library\think\App.php(234): ReflectionMethod->invokeArgs(Object(app\index\controller\Test), Array)
+#3 C:\WWW\taoke\thinkphp\library\think\App.php(407): think\App::invokeMethod(Array, Array)
+#4 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#5 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#6 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#7 {main}
+
+2017-05-03 17:34:05	exception 'think\exception\HttpException' with message 'module not exists:i' in C:\WWW\taoke\thinkphp\library\think\App.php:358
+Stack trace:
+#0 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#1 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#2 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#3 {main}
+
+2017-05-03 17:34:06	exception 'think\exception\HttpException' with message 'module not exists:i' in C:\WWW\taoke\thinkphp\library\think\App.php:358
+Stack trace:
+#0 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#1 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#2 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#3 {main}
+
+2017-05-03 17:34:16	exception 'think\exception\HttpException' with message 'module not exists:i' in C:\WWW\taoke\thinkphp\library\think\App.php:358
+Stack trace:
+#0 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#1 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#2 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#3 {main}
+
+2017-05-03 17:34:17	exception 'think\exception\HttpException' with message 'module not exists:i' in C:\WWW\taoke\thinkphp\library\think\App.php:358
+Stack trace:
+#0 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#1 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#2 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#3 {main}
+
+2017-05-03 17:40:29	exception 'think\exception\HttpException' with message 'module not exists:i' in C:\WWW\taoke\thinkphp\library\think\App.php:358
+Stack trace:
+#0 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#1 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#2 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#3 {main}
+
+2017-05-03 17:40:31	exception 'think\exception\HttpException' with message 'module not exists:i' in C:\WWW\taoke\thinkphp\library\think\App.php:358
+Stack trace:
+#0 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#1 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#2 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#3 {main}
+
+2017-05-03 18:03:03	exception 'think\exception\ErrorException' with message 'preg_match(): Unknown modifier 'd'' in C:\WWW\taoke\lib\taobao\tbitemcollection.php:78
+Stack trace:
+#0 [internal function]: think\Error::appError(2, 'preg_match(): U...', 'C:\\WWW\\taoke\\li...', 78, Array)
+#1 C:\WWW\taoke\lib\taobao\tbitemcollection.php(78): preg_match('/<li class="\\&q...', '\r\n\r\n\r\njsonp182(...', NULL)
+#2 C:\WWW\taoke\application\index\controller\Test.php(17): tbitemcollection->step2('10795111360')
+#3 [internal function]: app\index\controller\Test->tb1()
+#4 C:\WWW\taoke\thinkphp\library\think\App.php(234): ReflectionMethod->invokeArgs(Object(app\index\controller\Test), Array)
+#5 C:\WWW\taoke\thinkphp\library\think\App.php(407): think\App::invokeMethod(Array, Array)
+#6 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#7 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#8 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#9 {main}
+
+2017-05-03 18:03:29	exception 'think\exception\ErrorException' with message 'preg_match(): Unknown modifier 'd'' in C:\WWW\taoke\lib\taobao\tbitemcollection.php:78
+Stack trace:
+#0 [internal function]: think\Error::appError(2, 'preg_match(): U...', 'C:\\WWW\\taoke\\li...', 78, Array)
+#1 C:\WWW\taoke\lib\taobao\tbitemcollection.php(78): preg_match('/<li class="\\&q...', '\r\n\r\n\r\njsonp182(...', NULL)
+#2 C:\WWW\taoke\application\index\controller\Test.php(17): tbitemcollection->step2('10795111360')
+#3 [internal function]: app\index\controller\Test->tb1()
+#4 C:\WWW\taoke\thinkphp\library\think\App.php(234): ReflectionMethod->invokeArgs(Object(app\index\controller\Test), Array)
+#5 C:\WWW\taoke\thinkphp\library\think\App.php(407): think\App::invokeMethod(Array, Array)
+#6 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#7 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#8 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#9 {main}
+
+2017-05-03 18:29:24	exception 'think\exception\ErrorException' with message 'preg_match_all(): Unknown modifier 'd'' in C:\WWW\taoke\application\index\controller\Test.php:16
+Stack trace:
+#0 [internal function]: think\Error::appError(2, 'preg_match_all(...', 'C:\\WWW\\taoke\\ap...', 16, Array)
+#1 C:\WWW\taoke\application\index\controller\Test.php(16): preg_match_all('/<div class=\\"s...', '\r\n\r\njsonp181(" ...', NULL)
+#2 [internal function]: app\index\controller\Test->tb2()
+#3 C:\WWW\taoke\thinkphp\library\think\App.php(234): ReflectionMethod->invokeArgs(Object(app\index\controller\Test), Array)
+#4 C:\WWW\taoke\thinkphp\library\think\App.php(407): think\App::invokeMethod(Array, Array)
+#5 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#6 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#7 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#8 {main}
+
+2017-05-03 19:54:37	exception 'PDOException' with message 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+' in C:\WWW\taoke\thinkphp\library\think\db\Connection.php:282
+Stack trace:
+#0 C:\WWW\taoke\thinkphp\library\think\db\Connection.php(282): PDO->__construct('mysql:dbname=ta...', 'nts_devel', 'cdjmw910123asd', Array)
+#1 C:\WWW\taoke\thinkphp\library\think\db\Connection.php(848): think\db\Connection->connect()
+#2 C:\WWW\taoke\thinkphp\library\think\db\connector\Mysql.php(52): think\db\Connection->initConnect(true)
+#3 C:\WWW\taoke\thinkphp\library\think\db\Query.php(1424): think\db\connector\Mysql->getFields('tk_admin_config')
+#4 C:\WWW\taoke\thinkphp\library\think\db\Query.php(1472): think\db\Query->getTableInfo('__ADMIN_CONFIG_...', 'type')
+#5 C:\WWW\taoke\thinkphp\library\think\db\Query.php(1478): think\db\Query->getFieldsType(Array)
+#6 C:\WWW\taoke\thinkphp\library\think\db\Builder.php(230): think\db\Query->getFieldsBind(Array)
+#7 C:\WWW\taoke\thinkphp\library\think\db\Builder.php(208): think\db\Builder->buildWhere(Array, Array)
+#8 C:\WWW\taoke\thinkphp\library\think\db\Builder.php(600): think\db\Builder->parseWhere(Array, Array)
+#9 C:\WWW\taoke\thinkphp\library\think\db\Query.php(1931): think\db\Builder->select(Array)
+#10 C:\WWW\taoke\thinkphp\library\think\db\Query.php(441): think\db\Query->select()
+#11 [internal function]: think\db\Query->column('value,type', 'name')
+#12 C:\WWW\taoke\thinkphp\library\think\Model.php(1369): call_user_func_array(Array, Array)
+#13 C:\WWW\taoke\application\admin\model\Config.php(35): think\Model::__callStatic('column', Array)
+#14 C:\WWW\taoke\application\admin\model\Config.php(35): app\admin\model\Config::column('value,type', 'name')
+#15 C:\WWW\taoke\application\common\behavior\Config.php(103): app\admin\model\Config::getConfig()
+#16 C:\WWW\taoke\thinkphp\library\think\Hook.php(121): app\common\behavior\Config->run(Array, NULL)
+#17 C:\WWW\taoke\thinkphp\library\think\Hook.php(92): think\Hook::exec('app\\common\\beha...', 'app_begin', Array, NULL)
+#18 C:\WWW\taoke\thinkphp\library\think\App.php(131): think\Hook::listen('app_begin', Array)
+#19 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#20 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#21 {main}
+
+2017-05-03 19:55:26	exception 'PDOException' with message 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+' in C:\WWW\taoke\thinkphp\library\think\db\Connection.php:282
+Stack trace:
+#0 C:\WWW\taoke\thinkphp\library\think\db\Connection.php(282): PDO->__construct('mysql:dbname=ta...', 'nts_devel', 'cdjmw910123asd', Array)
+#1 C:\WWW\taoke\thinkphp\library\think\db\Connection.php(848): think\db\Connection->connect()
+#2 C:\WWW\taoke\thinkphp\library\think\db\connector\Mysql.php(52): think\db\Connection->initConnect(true)
+#3 C:\WWW\taoke\thinkphp\library\think\db\Query.php(1424): think\db\connector\Mysql->getFields('tk_admin_config')
+#4 C:\WWW\taoke\thinkphp\library\think\db\Query.php(1472): think\db\Query->getTableInfo('__ADMIN_CONFIG_...', 'type')
+#5 C:\WWW\taoke\thinkphp\library\think\db\Query.php(1478): think\db\Query->getFieldsType(Array)
+#6 C:\WWW\taoke\thinkphp\library\think\db\Builder.php(230): think\db\Query->getFieldsBind(Array)
+#7 C:\WWW\taoke\thinkphp\library\think\db\Builder.php(208): think\db\Builder->buildWhere(Array, Array)
+#8 C:\WWW\taoke\thinkphp\library\think\db\Builder.php(600): think\db\Builder->parseWhere(Array, Array)
+#9 C:\WWW\taoke\thinkphp\library\think\db\Query.php(1931): think\db\Builder->select(Array)
+#10 C:\WWW\taoke\thinkphp\library\think\db\Query.php(441): think\db\Query->select()
+#11 [internal function]: think\db\Query->column('value,type', 'name')
+#12 C:\WWW\taoke\thinkphp\library\think\Model.php(1369): call_user_func_array(Array, Array)
+#13 C:\WWW\taoke\application\admin\model\Config.php(35): think\Model::__callStatic('column', Array)
+#14 C:\WWW\taoke\application\admin\model\Config.php(35): app\admin\model\Config::column('value,type', 'name')
+#15 C:\WWW\taoke\application\common\behavior\Config.php(103): app\admin\model\Config::getConfig()
+#16 C:\WWW\taoke\thinkphp\library\think\Hook.php(121): app\common\behavior\Config->run(Array, NULL)
+#17 C:\WWW\taoke\thinkphp\library\think\Hook.php(92): think\Hook::exec('app\\common\\beha...', 'app_begin', Array, NULL)
+#18 C:\WWW\taoke\thinkphp\library\think\App.php(131): think\Hook::listen('app_begin', Array)
+#19 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#20 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#21 {main}
+

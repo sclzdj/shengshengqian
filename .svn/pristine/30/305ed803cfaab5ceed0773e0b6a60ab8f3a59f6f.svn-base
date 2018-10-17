@@ -1,0 +1,19 @@
+<?php
+namespace app\taoke\admin;
+
+use app\admin\controller\Admin;
+use think\Db;
+use think\Request;
+use think\Validate;
+use app\common\builder\ZBuilder; // 引入ZBuilder
+
+/**
+ * Taobaolm 后台模块
+ */
+class Taobaolm extends Admin
+{
+	public function index()
+	{
+		return $this->fetch();
+    }
+}

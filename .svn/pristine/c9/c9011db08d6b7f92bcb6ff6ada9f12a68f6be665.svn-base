@@ -1,0 +1,16 @@
+2017-05-05 14:29:07	exception 'think\exception\ErrorException' with message 'Undefined index: sale_num' in C:\WWW\taoke\application\index\controller\Test.php:107
+Stack trace:
+#0 C:\WWW\taoke\application\index\controller\Test.php(107): think\Error::appError(8, 'Undefined index...', 'C:\\WWW\\taoke\\ap...', 107, Array)
+#1 [internal function]: app\index\controller\Test->tb1()
+#2 C:\WWW\taoke\thinkphp\library\think\App.php(234): ReflectionMethod->invokeArgs(Object(app\index\controller\Test), Array)
+#3 C:\WWW\taoke\thinkphp\library\think\App.php(407): think\App::invokeMethod(Array, Array)
+#4 C:\WWW\taoke\thinkphp\library\think\App.php(142): think\App::module(Array, Array, NULL)
+#5 C:\WWW\taoke\thinkphp\start.php(18): think\App::run()
+#6 C:\WWW\taoke\public\index.php(26): require('C:\\WWW\\taoke\\th...')
+#7 {main}
+
+2017-05-05 15:04:41	exception 'think\exception\ErrorException' with message 'Class 'TbkItemGetRequest' not found' in C:\WWW\taoke\application\index\controller\Test.php:213
+Stack trace:
+#0 [internal function]: think\Error::appShutdown()
+#1 {main}
+
